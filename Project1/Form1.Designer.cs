@@ -49,6 +49,7 @@
             label17 = new Label();
             label18 = new Label();
             label19 = new Label();
+            txtSearch = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -64,14 +65,14 @@
             lblText.AutoSize = true;
             lblText.Location = new Point(2, 9);
             lblText.Name = "lblText";
-            lblText.Size = new Size(191, 32);
+            lblText.Size = new Size(176, 32);
             lblText.TabIndex = 1;
-            lblText.Text = "Sample,Test,Test";
+            lblText.Text = "simple,Text,Tex";
             lblText.Click += label2_Click;
             // 
             // lbl
             // 
-            lbl.Location = new Point(229, 0);
+            lbl.Location = new Point(531, 2);
             lbl.Name = "lbl";
             lbl.Size = new Size(150, 47);
             lbl.TabIndex = 2;
@@ -132,6 +133,7 @@
             label7.Size = new Size(24, 32);
             label7.TabIndex = 8;
             label7.Text = "-";
+            label7.Click += label7_Click;
             // 
             // label8
             // 
@@ -242,11 +244,23 @@
             label19.TabIndex = 19;
             label19.Text = "Trim";
             // 
+            // txtSearch
+            // 
+            txtSearch.BackColor = SystemColors.Window;
+            txtSearch.Font = new Font("맑은 고딕", 7F);
+            txtSearch.Location = new Point(306, 9);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(200, 32);
+            txtSearch.TabIndex = 21;
+            txtSearch.Text = "검색어를 입력하세요";
+            txtSearch.TextChanged += txtSearch_TextChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1095, 450);
+            Controls.Add(txtSearch);
             Controls.Add(label18);
             Controls.Add(label19);
             Controls.Add(label16);
@@ -298,5 +312,6 @@
         private Label label17;
         private Label label18;
         private Label label19;
+        private TextBox txtSearch;
     }
 }
