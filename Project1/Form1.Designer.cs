@@ -252,7 +252,6 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(200, 32);
             txtSearch.TabIndex = 21;
-            txtSearch.Text = "검색어를 입력하세요";
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // Form1
