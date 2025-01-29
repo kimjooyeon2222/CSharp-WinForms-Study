@@ -1,0 +1,10 @@
+C:\Users\zpffj\source\repos\Project2\Study_Loop\bin\Debug\Study_Loop.exe.config
+C:\Users\zpffj\source\repos\Project2\Study_Loop\bin\Debug\Study_Loop.exe
+C:\Users\zpffj\source\repos\Project2\Study_Loop\bin\Debug\Study_Loop.pdb
+C:\Users\zpffj\source\repos\Project2\Study_Loop\obj\Debug\Study_Loop.csproj.AssemblyReference.cache
+C:\Users\zpffj\source\repos\Project2\Study_Loop\obj\Debug\Study_Loop.Form1.resources
+C:\Users\zpffj\source\repos\Project2\Study_Loop\obj\Debug\Study_Loop.Properties.Resources.resources
+C:\Users\zpffj\source\repos\Project2\Study_Loop\obj\Debug\Study_Loop.csproj.GenerateResource.cache
+C:\Users\zpffj\source\repos\Project2\Study_Loop\obj\Debug\Study_Loop.csproj.CoreCompileInputs.cache
+C:\Users\zpffj\source\repos\Project2\Study_Loop\obj\Debug\Study_Loop.exe
+C:\Users\zpffj\source\repos\Project2\Study_Loop\obj\Debug\Study_Loop.pdb
