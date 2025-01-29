@@ -63,6 +63,7 @@
             this.btnForeach.TabIndex = 2;
             this.btnForeach.Text = "ForEach";
             this.btnForeach.UseVisualStyleBackColor = false;
+            this.btnForeach.Click += new System.EventHandler(this.btnForeach_Click);
             // 
             // Form1
             // 

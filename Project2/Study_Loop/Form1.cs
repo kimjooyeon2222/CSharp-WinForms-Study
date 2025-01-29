@@ -27,7 +27,7 @@ namespace Study_Loop
             testboxResult.Text = string.Empty;
             StringBuilder sb = new StringBuilder();
             int iResult = 0;
-            for (int i = 1; i < 10; i++)
+            for (int i = 1; i < 101; i++)
             {
                 iResult += i;
                 sb.Append(string.Format("1에서 {0}까지 더하면 {1}\r\n", i, iResult));
@@ -40,6 +40,20 @@ namespace Study_Loop
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
          
+        }
+
+        private void btnForeach_Click(object sender, EventArgs e)
+        {
+            testboxResult.Text = string.Empty;
+            string[] arr = {"모모", "정연", "사나", "다현", "쯔위", "지효", "미나", "채영"};
+            StringBuilder sb = new StringBuilder();
+            int i = 0;
+            foreach (var item in arr)
+            {
+                sb.Append(string.Format("{0} 선생님은 {1}반입니다.\r\n", item, i++));
+            }
+
+            testboxResult.Text = sb.ToString();
         }
     }
 }
