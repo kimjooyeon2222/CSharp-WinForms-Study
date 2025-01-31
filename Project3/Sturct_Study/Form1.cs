@@ -28,11 +28,16 @@ namespace Sturct_Study
                 return iRed + iOrange + iYellow;
             }
 
+            //결과를 String 형태로 변환 (화면에 결과를 보여주기 위해 사용)
             public string ResultText()
             {
                 return string.Format("{0}회) 빨강:{1}, 주황: {2}, 노랑: {3} => 합계는 {4}입니다.", iCount, iRed, iOrange, iYellow, iColorSum);
             }
         }
+
+        structPlayer srtPlayer1; //1번 플레이어
+        structPlayer srtPlayer2; //2번 플레이어
+
         public Form1()
         {
             InitializeComponent();

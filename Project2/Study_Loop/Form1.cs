@@ -45,7 +45,7 @@ namespace Study_Loop
         private void btnForeach_Click(object sender, EventArgs e)
         {
             testboxResult.Text = string.Empty;
-            string[] arr = {"모모", "정연", "사나", "다현", "쯔위", "지효", "미나", "채영"};
+            string[] arr = {"주연", "시율", "재형", "민준", "현수", "원빈", "진솔", "용재"};
             StringBuilder sb = new StringBuilder();
             int i = 0;
             foreach (var item in arr)
