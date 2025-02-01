@@ -98,7 +98,11 @@ namespace Sturct_Study
         private void pboxNone_Click(object sender, EventArgs e)
         {
 
-            //그냥 한 턴을 넘긴다.
+            if (rdoPlayer1.Checked)
+                _srtPlayer1.iCount++;
+            else
+                _srtPlayer2.iCount++;
+
             iCheckedChange();
 
         }
@@ -127,14 +131,14 @@ namespace Sturct_Study
             if (rdoPlayer1.Checked)
             {
                 _srtPlayer1.iCount++;
-                _srtPlayer1.iColorSum += _srtPlayer1.ColorSum();
+                _srtPlayer1.iColorSum += _srtPlayer1.iRed + _srtPlayer1.iOrange + _srtPlayer1.iYellow;  
                 strResult = _srtPlayer1.ResultText();
                 lboxResult1.Items.Add(strResult);
             }
             else
             {
                 _srtPlayer2.iCount++;
-                _srtPlayer2.iColorSum = _srtPlayer2.ColorSum();
+                _srtPlayer2.iColorSum += _srtPlayer2.iRed + _srtPlayer2.iOrange + _srtPlayer2.iYellow;  
                 strResult = _srtPlayer2.ResultText();
                 lboxResult2.Items.Add(strResult);
 
