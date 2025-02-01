@@ -58,9 +58,9 @@
             this.lbl2.AutoSize = true;
             this.lbl2.Location = new System.Drawing.Point(20, 66);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(796, 24);
+            this.lbl2.Size = new System.Drawing.Size(868, 24);
             this.lbl2.TabIndex = 1;
-            this.lbl2.Text = "- 각 5회 진행 후 해, 달, 별의 숫자의 합이 가장 높은 사람이 승리합니다. ";
+            this.lbl2.Text = "- 각 5회 진행 후 빨강, 주황, 노랑의 숫자의 합이 가장 높은 사람이 승리합니다. ";
             this.lbl2.Click += new System.EventHandler(this.lbl2_Click);
             // 
             // pboxRed
@@ -76,16 +76,17 @@
             // pboxOrange
             // 
             this.pboxOrange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pboxOrange.Location = new System.Drawing.Point(200, 111);
+            this.pboxOrange.Location = new System.Drawing.Point(283, 111);
             this.pboxOrange.Name = "pboxOrange";
             this.pboxOrange.Size = new System.Drawing.Size(170, 203);
             this.pboxOrange.TabIndex = 3;
             this.pboxOrange.TabStop = false;
+            this.pboxOrange.Click += new System.EventHandler(this.pboxOrange_Click);
             // 
             // pboxYellow
             // 
             this.pboxYellow.BackColor = System.Drawing.Color.Yellow;
-            this.pboxYellow.Location = new System.Drawing.Point(376, 111);
+            this.pboxYellow.Location = new System.Drawing.Point(535, 111);
             this.pboxYellow.Name = "pboxYellow";
             this.pboxYellow.Size = new System.Drawing.Size(170, 203);
             this.pboxYellow.TabIndex = 4;
@@ -95,11 +96,12 @@
             // pboxNone
             // 
             this.pboxNone.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pboxNone.Location = new System.Drawing.Point(552, 111);
+            this.pboxNone.Location = new System.Drawing.Point(797, 111);
             this.pboxNone.Name = "pboxNone";
             this.pboxNone.Size = new System.Drawing.Size(170, 203);
             this.pboxNone.TabIndex = 5;
             this.pboxNone.TabStop = false;
+            this.pboxNone.Click += new System.EventHandler(this.pboxNone_Click);
             // 
             // rdoPlayer1
             // 
@@ -115,13 +117,14 @@
             // rdoPlayer2
             // 
             this.rdoPlayer2.AutoSize = true;
-            this.rdoPlayer2.Location = new System.Drawing.Point(376, 335);
+            this.rdoPlayer2.Location = new System.Drawing.Point(518, 335);
             this.rdoPlayer2.Name = "rdoPlayer2";
             this.rdoPlayer2.Size = new System.Drawing.Size(117, 28);
             this.rdoPlayer2.TabIndex = 7;
             this.rdoPlayer2.TabStop = true;
             this.rdoPlayer2.Text = "Player2";
             this.rdoPlayer2.UseVisualStyleBackColor = true;
+            this.rdoPlayer2.CheckedChanged += new System.EventHandler(this.rdoPlayer2_CheckedChanged);
             // 
             // lboxResult1
             // 
@@ -129,23 +132,23 @@
             this.lboxResult1.ItemHeight = 24;
             this.lboxResult1.Location = new System.Drawing.Point(24, 382);
             this.lboxResult1.Name = "lboxResult1";
-            this.lboxResult1.Size = new System.Drawing.Size(346, 124);
+            this.lboxResult1.Size = new System.Drawing.Size(467, 316);
             this.lboxResult1.TabIndex = 8;
             // 
             // lboxResult2
             // 
             this.lboxResult2.FormattingEnabled = true;
             this.lboxResult2.ItemHeight = 24;
-            this.lboxResult2.Location = new System.Drawing.Point(376, 382);
+            this.lboxResult2.Location = new System.Drawing.Point(518, 382);
             this.lboxResult2.Name = "lboxResult2";
-            this.lboxResult2.Size = new System.Drawing.Size(346, 124);
+            this.lboxResult2.Size = new System.Drawing.Size(449, 316);
             this.lboxResult2.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 564);
+            this.ClientSize = new System.Drawing.Size(1105, 755);
             this.Controls.Add(this.lboxResult2);
             this.Controls.Add(this.lboxResult1);
             this.Controls.Add(this.rdoPlayer2);
