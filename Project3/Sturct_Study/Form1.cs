@@ -127,7 +127,7 @@ namespace Sturct_Study
             if (rdoPlayer1.Checked)
             {
                 _srtPlayer1.iCount++;
-                _srtPlayer1.iColorSum = _srtPlayer1.ColorSum();
+                _srtPlayer1.iColorSum += _srtPlayer1.ColorSum();
                 strResult = _srtPlayer1.ResultText();
                 lboxResult1.Items.Add(strResult);
             }
