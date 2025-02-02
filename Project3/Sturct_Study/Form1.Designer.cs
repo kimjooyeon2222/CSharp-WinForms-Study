@@ -38,6 +38,7 @@
             this.rdoPlayer2 = new System.Windows.Forms.RadioButton();
             this.lboxResult1 = new System.Windows.Forms.ListBox();
             this.lboxResult2 = new System.Windows.Forms.ListBox();
+            this.leaderBoard = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pboxRed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxOrange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxYellow)).BeginInit();
@@ -137,8 +138,9 @@
             this.lboxResult1.ItemHeight = 35;
             this.lboxResult1.Location = new System.Drawing.Point(24, 478);
             this.lboxResult1.Name = "lboxResult1";
-            this.lboxResult1.Size = new System.Drawing.Size(768, 704);
+            this.lboxResult1.Size = new System.Drawing.Size(768, 354);
             this.lboxResult1.TabIndex = 8;
+            this.lboxResult1.SelectedIndexChanged += new System.EventHandler(this.lboxResult1_SelectedIndexChanged);
             // 
             // lboxResult2
             // 
@@ -147,14 +149,29 @@
             this.lboxResult2.ItemHeight = 35;
             this.lboxResult2.Location = new System.Drawing.Point(887, 478);
             this.lboxResult2.Name = "lboxResult2";
-            this.lboxResult2.Size = new System.Drawing.Size(857, 704);
+            this.lboxResult2.Size = new System.Drawing.Size(857, 354);
             this.lboxResult2.TabIndex = 9;
+            // 
+            // leaderBoard
+            // 
+            this.leaderBoard.BackColor = System.Drawing.Color.Black;
+            this.leaderBoard.Cursor = System.Windows.Forms.Cursors.No;
+            this.leaderBoard.Font = new System.Drawing.Font("굴림", 12F);
+            this.leaderBoard.ForeColor = System.Drawing.Color.Transparent;
+            this.leaderBoard.FormattingEnabled = true;
+            this.leaderBoard.ItemHeight = 32;
+            this.leaderBoard.Location = new System.Drawing.Point(27, 909);
+            this.leaderBoard.Name = "leaderBoard";
+            this.leaderBoard.Size = new System.Drawing.Size(1717, 292);
+            this.leaderBoard.TabIndex = 10;
+            this.leaderBoard.SelectedIndexChanged += new System.EventHandler(this.leaderBoard_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1834, 1246);
+            this.Controls.Add(this.leaderBoard);
             this.Controls.Add(this.lboxResult2);
             this.Controls.Add(this.lboxResult1);
             this.Controls.Add(this.rdoPlayer2);
@@ -188,6 +205,7 @@
         private System.Windows.Forms.RadioButton rdoPlayer2;
         private System.Windows.Forms.ListBox lboxResult1;
         private System.Windows.Forms.ListBox lboxResult2;
+        private System.Windows.Forms.ListBox leaderBoard;
     }
 }
 

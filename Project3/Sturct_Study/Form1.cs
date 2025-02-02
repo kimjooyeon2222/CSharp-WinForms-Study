@@ -64,7 +64,8 @@ namespace Sturct_Study
                 _srtPlayer2.iRed = num;
             }
             Result();
-          
+            leader_Board_Result();
+
         }
 
         private void pboxYellow_Click(object sender, EventArgs e)
@@ -79,6 +80,7 @@ namespace Sturct_Study
                 _srtPlayer2.iYellow = num;
             }
             Result();
+            leader_Board_Result();
         }
 
         private void pboxOrange_Click(object sender, EventArgs e)
@@ -93,15 +95,13 @@ namespace Sturct_Study
                 _srtPlayer2.iOrange = num;
             }
             Result();
+            leader_Board_Result();
         }
 
         private void pboxNone_Click(object sender, EventArgs e)
         {
 
-            if (rdoPlayer1.Checked)
-                _srtPlayer1.iCount++;
-            else
-                _srtPlayer2.iCount++;
+         //순서 바꿀 수 있다.
 
             iCheckedChange();
 
@@ -165,6 +165,39 @@ namespace Sturct_Study
 
                 }
             }
+        }
+
+        private void leader_Board_Result()
+        {
+            string str = string.Empty;
+
+            if (_srtPlayer1.iColorSum > _srtPlayer2.iColorSum)
+            {
+                str = string.Format("합계는 Player1이 {0}만큼 Player2보다 큽니다.", Math.Abs(_srtPlayer1.iColorSum - _srtPlayer2.iColorSum));
+
+            }
+            else if (_srtPlayer1.iColorSum < _srtPlayer2.iColorSum)
+            {
+                str = string.Format("합계는 Player2이 {0}만큼 Player1보다 큽니다.", Math.Abs(_srtPlayer2.iColorSum - _srtPlayer1.iColorSum));
+
+            }
+            else
+            {
+                str = "합계는 Player1과 Player2가 같습니다.";
+
+            }
+
+            leaderBoard.Items.Add(str);
+        }
+
+        private void leaderBoard_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void lboxResult1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
