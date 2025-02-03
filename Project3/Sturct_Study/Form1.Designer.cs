@@ -48,17 +48,18 @@
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Font = new System.Drawing.Font("굴림", 15F);
+            this.lbl1.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl1.Location = new System.Drawing.Point(20, 21);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(939, 40);
+            this.lbl1.Size = new System.Drawing.Size(1362, 40);
             this.lbl1.TabIndex = 0;
-            this.lbl1.Text = "- Player는 한 번씩 돌아가면서 선택을 하게 됩니다.";
+            this.lbl1.Text = "- Player는 한 번씩 돌아가면서 선택을 하게 됩니다. (숫자는 1~30 중 랜덤)";
+            this.lbl1.Click += new System.EventHandler(this.lbl1_Click);
             // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Font = new System.Drawing.Font("굴림", 15F);
+            this.lbl2.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl2.Location = new System.Drawing.Point(20, 66);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(1446, 40);
@@ -98,7 +99,7 @@
             // 
             // pboxNone
             // 
-            this.pboxNone.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pboxNone.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pboxNone.Location = new System.Drawing.Point(1574, 111);
             this.pboxNone.Name = "pboxNone";
             this.pboxNone.Size = new System.Drawing.Size(170, 249);
@@ -109,10 +110,10 @@
             // rdoPlayer1
             // 
             this.rdoPlayer1.AutoSize = true;
-            this.rdoPlayer1.Font = new System.Drawing.Font("굴림", 13F);
+            this.rdoPlayer1.Font = new System.Drawing.Font("굴림", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoPlayer1.Location = new System.Drawing.Point(24, 398);
             this.rdoPlayer1.Name = "rdoPlayer1";
-            this.rdoPlayer1.Size = new System.Drawing.Size(166, 39);
+            this.rdoPlayer1.Size = new System.Drawing.Size(173, 39);
             this.rdoPlayer1.TabIndex = 6;
             this.rdoPlayer1.TabStop = true;
             this.rdoPlayer1.Text = "Player1";
@@ -121,10 +122,10 @@
             // rdoPlayer2
             // 
             this.rdoPlayer2.AutoSize = true;
-            this.rdoPlayer2.Font = new System.Drawing.Font("굴림", 13F);
+            this.rdoPlayer2.Font = new System.Drawing.Font("굴림", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoPlayer2.Location = new System.Drawing.Point(887, 398);
             this.rdoPlayer2.Name = "rdoPlayer2";
-            this.rdoPlayer2.Size = new System.Drawing.Size(166, 39);
+            this.rdoPlayer2.Size = new System.Drawing.Size(173, 39);
             this.rdoPlayer2.TabIndex = 7;
             this.rdoPlayer2.TabStop = true;
             this.rdoPlayer2.Text = "Player2";
@@ -133,7 +134,8 @@
             // 
             // lboxResult1
             // 
-            this.lboxResult1.Font = new System.Drawing.Font("굴림", 13F);
+            this.lboxResult1.BackColor = System.Drawing.Color.MistyRose;
+            this.lboxResult1.Font = new System.Drawing.Font("굴림", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lboxResult1.FormattingEnabled = true;
             this.lboxResult1.ItemHeight = 35;
             this.lboxResult1.Location = new System.Drawing.Point(24, 478);
@@ -144,7 +146,8 @@
             // 
             // lboxResult2
             // 
-            this.lboxResult2.Font = new System.Drawing.Font("굴림", 13F);
+            this.lboxResult2.BackColor = System.Drawing.Color.MistyRose;
+            this.lboxResult2.Font = new System.Drawing.Font("굴림", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lboxResult2.FormattingEnabled = true;
             this.lboxResult2.ItemHeight = 35;
             this.lboxResult2.Location = new System.Drawing.Point(887, 478);
@@ -154,15 +157,15 @@
             // 
             // leaderBoard
             // 
-            this.leaderBoard.BackColor = System.Drawing.Color.Black;
+            this.leaderBoard.BackColor = System.Drawing.Color.OliveDrab;
             this.leaderBoard.Cursor = System.Windows.Forms.Cursors.No;
-            this.leaderBoard.Font = new System.Drawing.Font("굴림", 12F);
+            this.leaderBoard.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.leaderBoard.ForeColor = System.Drawing.Color.Transparent;
             this.leaderBoard.FormattingEnabled = true;
-            this.leaderBoard.ItemHeight = 32;
-            this.leaderBoard.Location = new System.Drawing.Point(27, 909);
+            this.leaderBoard.ItemHeight = 25;
+            this.leaderBoard.Location = new System.Drawing.Point(27, 875);
             this.leaderBoard.Name = "leaderBoard";
-            this.leaderBoard.Size = new System.Drawing.Size(1717, 292);
+            this.leaderBoard.Size = new System.Drawing.Size(1717, 379);
             this.leaderBoard.TabIndex = 10;
             this.leaderBoard.SelectedIndexChanged += new System.EventHandler(this.leaderBoard_SelectedIndexChanged);
             // 

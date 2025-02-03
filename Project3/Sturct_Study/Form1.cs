@@ -53,14 +53,18 @@ namespace Sturct_Study
         private void pboxRed_Click(object sender, EventArgs e)
         {
 
-
-            int num = _rd.Next(1,21);
+            
+            int num = _rd.Next(1,31);
             if (rdoPlayer1.Checked)
             {
+                _srtPlayer1.iYellow = 0;
+                _srtPlayer1.iOrange = 0;
                 _srtPlayer1.iRed = num;
             }
             else
             {
+                _srtPlayer2.iYellow = 0;
+                _srtPlayer2.iOrange = 0;
                 _srtPlayer2.iRed = num;
             }
             Result();
@@ -70,14 +74,18 @@ namespace Sturct_Study
 
         private void pboxYellow_Click(object sender, EventArgs e)
         {
-            int num = _rd.Next(1, 21);
+            int num = _rd.Next(1, 31);
             if (rdoPlayer1.Checked)
             {
                 _srtPlayer1.iYellow = num;
+                _srtPlayer1.iOrange = 0;
+                _srtPlayer1.iRed = 0;
             }
             else
             {
                 _srtPlayer2.iYellow = num;
+                _srtPlayer2.iOrange = 0;
+                _srtPlayer2.iRed = 0;
             }
             Result();
             leader_Board_Result();
@@ -85,14 +93,18 @@ namespace Sturct_Study
 
         private void pboxOrange_Click(object sender, EventArgs e)
         {
-            int num = _rd.Next(1, 21);
+            int num = _rd.Next(1, 31);
             if (rdoPlayer1.Checked)
             {
+                _srtPlayer1.iYellow = 0;
                 _srtPlayer1.iOrange = num;
+                _srtPlayer1.iRed = 0;
             }
             else
             {
+                _srtPlayer2.iYellow = 0;
                 _srtPlayer2.iOrange = num;
+                _srtPlayer2.iRed = 0;
             }
             Result();
             leader_Board_Result();
@@ -131,14 +143,14 @@ namespace Sturct_Study
             if (rdoPlayer1.Checked)
             {
                 _srtPlayer1.iCount++;
-                _srtPlayer1.iColorSum += _srtPlayer1.iRed + _srtPlayer1.iOrange + _srtPlayer1.iYellow;  
+                _srtPlayer1.iColorSum += (_srtPlayer1.iRed + _srtPlayer1.iOrange + _srtPlayer1.iYellow);  
                 strResult = _srtPlayer1.ResultText();
                 lboxResult1.Items.Add(strResult);
             }
             else
             {
                 _srtPlayer2.iCount++;
-                _srtPlayer2.iColorSum += _srtPlayer2.iRed + _srtPlayer2.iOrange + _srtPlayer2.iYellow;  
+                _srtPlayer2.iColorSum += (_srtPlayer2.iRed + _srtPlayer2.iOrange + _srtPlayer2.iYellow);  
                 strResult = _srtPlayer2.ResultText();
                 lboxResult2.Items.Add(strResult);
 
@@ -196,6 +208,11 @@ namespace Sturct_Study
         }
 
         private void lboxResult1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl1_Click(object sender, EventArgs e)
         {
 
         }
