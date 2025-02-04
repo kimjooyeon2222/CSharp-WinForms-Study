@@ -77,6 +77,7 @@
             this.btnCycle.TabIndex = 3;
             this.btnCycle.Text = "2단계: 자전거";
             this.btnCycle.UseVisualStyleBackColor = true;
+            this.btnCycle.Click += new System.EventHandler(this.btnCycle_Click);
             // 
             // btnCar
             // 
@@ -87,6 +88,7 @@
             this.btnCar.TabIndex = 4;
             this.btnCar.Text = "3단계: 자동차";
             this.btnCar.UseVisualStyleBackColor = true;
+            this.btnCar.Click += new System.EventHandler(this.btnCar_Click);
             // 
             // btnRight
             // 

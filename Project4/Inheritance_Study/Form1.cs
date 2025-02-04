@@ -14,6 +14,9 @@ namespace Inheritance_Study
     {
 
         COneCycle _cOC;
+        CCycle _cC;
+        CCar _cCar;
+
         public Form1()
         {
             InitializeComponent();
@@ -23,20 +26,35 @@ namespace Inheritance_Study
         private void Form1_Load(object sender, EventArgs e)
         {
             _cOC = new COneCycle("외발 자전거");
+            _cC = new CCycle("자전거");
+            _cCar = new CCar("자동차");
+
         }
 
         private void btnOneCycle_Click(object sender, EventArgs e)
         {
-            OneCycleDraw();
+            fClearPanel();
+            fOneCycleDraw();
+        }
+        private void btnCycle_Click(object sender, EventArgs e)
+        {
+            fClearPanel();
+            fCycleDraw();
         }
 
-        private void pMain_Paint(object sender, PaintEventArgs e)
+    
+    private void btnCar_Click(object sender, EventArgs e)
+    {
+        fClearPanel();
+        fCarDraw();
+    }
+    private void pMain_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         //OneCycle에 대한 위치 그림을 그려준다.
-        private void OneCycleDraw()
+        private void fOneCycleDraw()
         {
             lblName.Text = _cOC.strName;
             Graphics g = pMain.CreateGraphics();
@@ -44,6 +62,34 @@ namespace Inheritance_Study
             g.DrawRectangle(p, _cOC._rtSquare1);
             g.DrawEllipse(p, _cOC._rtCircle1);
 
+        }
+
+        private void fCycleDraw()
+        {
+            lblName.Text = _cC.strName;
+            Graphics g = pMain.CreateGraphics();
+            Pen p = _cC.fPenInfo();
+            g.DrawRectangle(p, _cC._rtSquare1);
+            g.DrawEllipse(p, _cC._rtCircle1);
+            g.DrawEllipse(p, _cC._rtCircle2);
+
+        }
+    private void fCarDraw()
+    {
+        lblName.Text = _cCar.strName;
+        Graphics g = pMain.CreateGraphics();
+        Pen p = _cCar.fPenInfo();
+        g.DrawRectangle(p, _cCar._rtSquare1);
+        g.DrawRectangle(p, _cCar._rtSquare2);
+        g.DrawEllipse(p, _cCar._rtCircle1);
+        g.DrawEllipse(p, _cCar._rtCircle2);
+
+    }
+
+    private void fClearPanel()
+        {
+            pMain.Invalidate();
+            Refresh();
         }
 
     }
