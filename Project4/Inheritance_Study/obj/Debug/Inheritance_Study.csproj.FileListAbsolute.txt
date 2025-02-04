@@ -1,0 +1,10 @@
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\bin\Debug\Inheritance_Study.exe.config
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\bin\Debug\Inheritance_Study.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\bin\Debug\Inheritance_Study.pdb
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\obj\Debug\Inheritance_Study.csproj.AssemblyReference.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\obj\Debug\Inheritance_Study.Form1.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\obj\Debug\Inheritance_Study.Properties.Resources.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\obj\Debug\Inheritance_Study.csproj.GenerateResource.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\obj\Debug\Inheritance_Study.csproj.CoreCompileInputs.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\obj\Debug\Inheritance_Study.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project4\Inheritance_Study\obj\Debug\Inheritance_Study.pdb
