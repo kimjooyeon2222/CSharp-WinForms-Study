@@ -23,7 +23,24 @@ namespace Inheritance_Study
 
         }
 
+        //외부에서 호출 가능하도록 (public)
+        public override void fMove(int iMove)
+        {
+            fCircle1Move(iMove);
+            fSqaure1Move(iMove);
+            fCircle2Move(iMove);
+            fSqaure2Move(iMove);
 
+        }
+
+        //내부에서만 움직인다 (protected)
+        protected void fSqaure2Move(int iMove)
+        {
+            Point oPoint = _rtSquare2.Location;
+            oPoint.X = oPoint.X + iMove;
+            _rtSquare2.Location = oPoint;
+
+        }
 
     }
 }

@@ -92,5 +92,55 @@ namespace Inheritance_Study
             Refresh();
         }
 
+        private void btnLeft_Click(object sender, EventArgs e)
+        {
+            if (lblName.Text == _cOC.strName)
+            {
+                fClearPanel();
+                _cOC.fMove(-5);
+                fOneCycleDraw();
+
+            }
+            else if (lblName.Text == _cC.strName)
+            {
+                fClearPanel();
+                _cC.fMove(-5);
+                fCycleDraw();
+
+            }
+            else if (lblName.Text == _cCar.strName)
+            {
+                fClearPanel();
+                _cCar.fMove(-5);
+                fCarDraw();
+
+            }
+        }
+
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+
+            if (lblName.Text == _cOC.strName)
+            {
+                fClearPanel();
+                _cOC.fMove(5);
+                fOneCycleDraw();
+
+            }
+            else if (lblName.Text == _cC.strName)
+            {
+                fClearPanel();
+                _cC.fMove(5);
+                fCycleDraw();
+
+            }
+           else if (lblName.Text == _cCar.strName)
+            {
+                fClearPanel();
+                _cCar.fMove(5);
+                fCarDraw();
+
+            }
+        }
     }
 }

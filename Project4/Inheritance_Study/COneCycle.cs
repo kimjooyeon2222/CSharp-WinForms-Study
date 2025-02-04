@@ -10,8 +10,7 @@ namespace Inheritance_Study
     internal class COneCycle : CBase
     {
 
-        public Rectangle _rtCircle1; // 바퀴
-        public Rectangle _rtSquare1; // 몸통
+
       public COneCycle(string sName)
         {
             strName = sName;
@@ -21,10 +20,19 @@ namespace Inheritance_Study
 
         }
 
+        public override void fMove(int iMove) {
+
+            fCircle1Move(iMove);
+            fSqaure1Move(iMove);
+
+        }
 
         public Pen fPenInfo()
         {
             return _Pen;
         }
+
+    
+
     }
 }

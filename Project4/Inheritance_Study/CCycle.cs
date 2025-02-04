@@ -9,9 +9,7 @@ namespace Inheritance_Study
 {
     internal class CCycle : CBase
     {
-        public Rectangle _rtCircle1; // 바퀴
         public Rectangle _rtCircle2; // 바퀴
-        public Rectangle _rtSquare1; // 몸통
         public CCycle(string sName)
         {
             strName = sName;
@@ -27,5 +25,26 @@ namespace Inheritance_Study
         {
             return _Pen;
         }
+
+        //외부에서 호출 가능하도록 (public)
+        public override void fMove(int iMove)
+        {
+            fCircle1Move(iMove);
+            fSqaure1Move(iMove);
+            fCircle2Move(iMove);
+        }
+
+
+        //내부에서만 움직인다 (protected)
+        protected void fCircle2Move(int iMove)
+        {
+            Point oPoint = _rtCircle2.Location;
+            oPoint.X = oPoint.X + iMove;
+            _rtCircle2.Location = oPoint;
+
+        }
+
+
+   
     }
 }

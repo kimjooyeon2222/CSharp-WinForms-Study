@@ -99,6 +99,7 @@
             this.btnRight.TabIndex = 5;
             this.btnRight.Text = "--->";
             this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
             // btnLeft
             // 
@@ -109,6 +110,7 @@
             this.btnLeft.TabIndex = 6;
             this.btnLeft.Text = "<---";
             this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // Form1
             // 
