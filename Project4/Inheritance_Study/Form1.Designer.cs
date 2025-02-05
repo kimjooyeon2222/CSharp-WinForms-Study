@@ -111,7 +111,6 @@
             this.btnLeft.TabIndex = 6;
             this.btnLeft.Text = "<---";
             this.btnLeft.UseVisualStyleBackColor = true;
-            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // Form1
             // 
@@ -125,12 +124,16 @@
             this.Controls.Add(this.btnOneCycle);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pMain);
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown1);
             this.ResumeLayout(false);
 
         }
+
+    
 
         #endregion
 

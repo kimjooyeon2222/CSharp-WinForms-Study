@@ -31,6 +31,61 @@ namespace Inheritance_Study
 
         }
 
+        private void Form1_KeyDown1(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Q)
+            {
+                if (lblName.Text == _cOC.strName)
+                {
+                    fClearPanel();
+                    _cOC.fMove(-5);
+                    fOneCycleDraw();
+
+                }
+                else if (lblName.Text == _cC.strName)
+                {
+                    fClearPanel();
+                    _cC.fMove(-5);
+                    fCycleDraw();
+
+                }
+                else if (lblName.Text == _cCar.strName)
+                {
+                    fClearPanel();
+                    _cCar.fMove(-5);
+                    fCarDraw();
+
+                }
+            }
+            else if (e.KeyCode == Keys.E)
+            {
+                if (lblName.Text == _cOC.strName)
+                {
+                    fClearPanel();
+                    _cOC.fMove(5);
+                    fOneCycleDraw();
+
+                }
+                else if (lblName.Text == _cC.strName)
+                {
+                    fClearPanel();
+                    _cC.fMove(5);
+                    fCycleDraw();
+
+                }
+                else if (lblName.Text == _cCar.strName)
+                {
+                    fClearPanel();
+                    _cCar.fMove(5);
+                    fCarDraw();
+
+                }
+            }
+
+        
+    }
+
         private void btnOneCycle_Click(object sender, EventArgs e)
         {
             fClearPanel();
@@ -142,5 +197,9 @@ namespace Inheritance_Study
 
             }
         }
+
+  
+
+
     }
 }
