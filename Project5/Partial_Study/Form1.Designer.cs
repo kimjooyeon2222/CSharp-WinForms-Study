@@ -28,21 +28,137 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lboxItem = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboxItem = new System.Windows.Forms.ComboBox();
+            this.cboxRate = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numCout = new System.Windows.Forms.NumericUpDown();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.tboxResult = new System.Windows.Forms.TextBox();
+            this.tboxErrorMsg = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numCout)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lboxItem
+            // 
+            this.lboxItem.FormattingEnabled = true;
+            this.lboxItem.ItemHeight = 24;
+            this.lboxItem.Location = new System.Drawing.Point(21, 22);
+            this.lboxItem.Name = "lboxItem";
+            this.lboxItem.Size = new System.Drawing.Size(369, 364);
+            this.lboxItem.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(419, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "물건";
+            // 
+            // cboxItem
+            // 
+            this.cboxItem.FormattingEnabled = true;
+            this.cboxItem.Location = new System.Drawing.Point(423, 59);
+            this.cboxItem.Name = "cboxItem";
+            this.cboxItem.Size = new System.Drawing.Size(121, 32);
+            this.cboxItem.TabIndex = 2;
+            // 
+            // cboxRate
+            // 
+            this.cboxRate.FormattingEnabled = true;
+            this.cboxRate.Location = new System.Drawing.Point(423, 157);
+            this.cboxRate.Name = "cboxRate";
+            this.cboxRate.Size = new System.Drawing.Size(121, 32);
+            this.cboxRate.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(419, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 24);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "할인율(%)";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(419, 211);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 24);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "개수";
+            // 
+            // numCout
+            // 
+            this.numCout.Location = new System.Drawing.Point(423, 247);
+            this.numCout.Name = "numCout";
+            this.numCout.Size = new System.Drawing.Size(122, 35);
+            this.numCout.TabIndex = 6;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(423, 321);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(122, 48);
+            this.btnAdd.TabIndex = 7;
+            this.btnAdd.Text = "담기";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // tboxResult
+            // 
+            this.tboxResult.Location = new System.Drawing.Point(20, 407);
+            this.tboxResult.Name = "tboxResult";
+            this.tboxResult.Size = new System.Drawing.Size(369, 35);
+            this.tboxResult.TabIndex = 8;
+            // 
+            // tboxErrorMsg
+            // 
+            this.tboxErrorMsg.Location = new System.Drawing.Point(12, 460);
+            this.tboxErrorMsg.Name = "tboxErrorMsg";
+            this.tboxErrorMsg.Size = new System.Drawing.Size(533, 35);
+            this.tboxErrorMsg.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(568, 515);
+            this.Controls.Add(this.tboxErrorMsg);
+            this.Controls.Add(this.tboxResult);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.numCout);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cboxRate);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cboxItem);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lboxItem);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numCout)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox lboxItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboxItem;
+        private System.Windows.Forms.ComboBox cboxRate;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numCout;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox tboxResult;
+        private System.Windows.Forms.TextBox tboxErrorMsg;
     }
 }
 
