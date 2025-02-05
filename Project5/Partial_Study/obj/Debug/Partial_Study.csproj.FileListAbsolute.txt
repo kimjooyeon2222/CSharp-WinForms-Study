@@ -1,0 +1,10 @@
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\bin\Debug\Partial_Study.exe.config
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\bin\Debug\Partial_Study.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\bin\Debug\Partial_Study.pdb
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\obj\Debug\Partial_Study.csproj.AssemblyReference.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\obj\Debug\Partial_Study.Form1.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\obj\Debug\Partial_Study.Properties.Resources.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\obj\Debug\Partial_Study.csproj.GenerateResource.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\obj\Debug\Partial_Study.csproj.CoreCompileInputs.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\obj\Debug\Partial_Study.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project5\Partial_Study\obj\Debug\Partial_Study.pdb
