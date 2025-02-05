@@ -48,8 +48,9 @@
             // 
             // lblName
             // 
-            this.lblName.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblName.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblName.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblName.Location = new System.Drawing.Point(20, 350);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(144, 51);
@@ -59,7 +60,7 @@
             // 
             // btnOneCycle
             // 
-            this.btnOneCycle.Font = new System.Drawing.Font("굴림", 6F);
+            this.btnOneCycle.Font = new System.Drawing.Font("굴림", 4.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnOneCycle.Location = new System.Drawing.Point(170, 350);
             this.btnOneCycle.Name = "btnOneCycle";
             this.btnOneCycle.Size = new System.Drawing.Size(159, 52);
@@ -70,7 +71,7 @@
             // 
             // btnCycle
             // 
-            this.btnCycle.Font = new System.Drawing.Font("굴림", 6F);
+            this.btnCycle.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnCycle.Location = new System.Drawing.Point(335, 350);
             this.btnCycle.Name = "btnCycle";
             this.btnCycle.Size = new System.Drawing.Size(139, 52);
@@ -81,7 +82,7 @@
             // 
             // btnCar
             // 
-            this.btnCar.Font = new System.Drawing.Font("굴림", 6F);
+            this.btnCar.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnCar.Location = new System.Drawing.Point(480, 349);
             this.btnCar.Name = "btnCar";
             this.btnCar.Size = new System.Drawing.Size(144, 52);
@@ -92,7 +93,7 @@
             // 
             // btnRight
             // 
-            this.btnRight.Font = new System.Drawing.Font("굴림", 6F);
+            this.btnRight.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnRight.Location = new System.Drawing.Point(416, 407);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(170, 52);
@@ -103,7 +104,7 @@
             // 
             // btnLeft
             // 
-            this.btnLeft.Font = new System.Drawing.Font("굴림", 6F);
+            this.btnLeft.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLeft.Location = new System.Drawing.Point(242, 408);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(168, 52);
