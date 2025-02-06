@@ -38,6 +38,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.tboxResult = new System.Windows.Forms.TextBox();
             this.tboxErrorMsg = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numCout)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             this.lboxItem.Name = "lboxItem";
             this.lboxItem.Size = new System.Drawing.Size(369, 364);
             this.lboxItem.TabIndex = 0;
+            this.lboxItem.SelectedIndexChanged += new System.EventHandler(this.lboxItem_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -108,6 +110,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "담기";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tboxResult
             // 
@@ -118,16 +121,28 @@
             // 
             // tboxErrorMsg
             // 
+            this.tboxErrorMsg.ForeColor = System.Drawing.Color.Red;
             this.tboxErrorMsg.Location = new System.Drawing.Point(12, 460);
             this.tboxErrorMsg.Name = "tboxErrorMsg";
             this.tboxErrorMsg.Size = new System.Drawing.Size(533, 35);
             this.tboxErrorMsg.TabIndex = 9;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(423, 391);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(121, 51);
+            this.btnClear.TabIndex = 10;
+            this.btnClear.Text = "초기화";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 515);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.tboxErrorMsg);
             this.Controls.Add(this.tboxResult);
             this.Controls.Add(this.btnAdd);
@@ -159,6 +174,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox tboxResult;
         private System.Windows.Forms.TextBox tboxErrorMsg;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
