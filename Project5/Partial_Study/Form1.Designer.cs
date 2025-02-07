@@ -44,6 +44,8 @@
             // 
             // lboxItem
             // 
+            this.lboxItem.BackColor = System.Drawing.Color.LightBlue;
+            this.lboxItem.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lboxItem.FormattingEnabled = true;
             this.lboxItem.ItemHeight = 24;
             this.lboxItem.Location = new System.Drawing.Point(21, 22);
@@ -55,14 +57,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(419, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 24);
+            this.label1.Size = new System.Drawing.Size(60, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "물건";
             // 
             // cboxItem
             // 
+            this.cboxItem.BackColor = System.Drawing.SystemColors.Window;
             this.cboxItem.FormattingEnabled = true;
             this.cboxItem.Location = new System.Drawing.Point(423, 59);
             this.cboxItem.Name = "cboxItem";
@@ -71,6 +75,7 @@
             // 
             // cboxRate
             // 
+            this.cboxRate.BackColor = System.Drawing.Color.Azure;
             this.cboxRate.FormattingEnabled = true;
             this.cboxRate.Location = new System.Drawing.Point(423, 157);
             this.cboxRate.Name = "cboxRate";
@@ -80,23 +85,26 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.Location = new System.Drawing.Point(419, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 24);
+            this.label2.Size = new System.Drawing.Size(125, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "할인율(%)";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.Location = new System.Drawing.Point(419, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 24);
+            this.label3.Size = new System.Drawing.Size(60, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "개수";
             // 
             // numCout
             // 
+            this.numCout.BackColor = System.Drawing.Color.Azure;
             this.numCout.Location = new System.Drawing.Point(423, 247);
             this.numCout.Name = "numCout";
             this.numCout.Size = new System.Drawing.Size(122, 35);
@@ -104,16 +112,20 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnAdd.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnAdd.Location = new System.Drawing.Point(423, 321);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(122, 48);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "담기";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tboxResult
             // 
+            this.tboxResult.BackColor = System.Drawing.Color.Azure;
+            this.tboxResult.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tboxResult.Location = new System.Drawing.Point(20, 407);
             this.tboxResult.Name = "tboxResult";
             this.tboxResult.Size = new System.Drawing.Size(369, 35);
@@ -121,6 +133,8 @@
             // 
             // tboxErrorMsg
             // 
+            this.tboxErrorMsg.BackColor = System.Drawing.Color.Azure;
+            this.tboxErrorMsg.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tboxErrorMsg.ForeColor = System.Drawing.Color.Red;
             this.tboxErrorMsg.Location = new System.Drawing.Point(12, 460);
             this.tboxErrorMsg.Name = "tboxErrorMsg";
@@ -129,12 +143,14 @@
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnClear.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnClear.Location = new System.Drawing.Point(423, 391);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(121, 51);
             this.btnClear.TabIndex = 10;
             this.btnClear.Text = "초기화";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // Form1
