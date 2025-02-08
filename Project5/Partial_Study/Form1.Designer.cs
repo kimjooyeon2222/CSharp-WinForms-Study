@@ -72,6 +72,7 @@
             this.cboxItem.Name = "cboxItem";
             this.cboxItem.Size = new System.Drawing.Size(121, 32);
             this.cboxItem.TabIndex = 2;
+            this.cboxItem.SelectedIndexChanged += new System.EventHandler(this.cboxItem_SelectedIndexChanged);
             // 
             // cboxRate
             // 

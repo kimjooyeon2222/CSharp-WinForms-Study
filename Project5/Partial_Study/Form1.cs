@@ -77,5 +77,10 @@ namespace Partial_Study
             lboxItem.Items.Clear();
             tboxErrorMsg.Text="";
         }
+
+        private void cboxItem_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
