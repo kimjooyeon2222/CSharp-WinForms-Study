@@ -157,7 +157,7 @@
             // 
             // leaderBoard
             // 
-            this.leaderBoard.BackColor = System.Drawing.Color.OliveDrab;
+            this.leaderBoard.BackColor = System.Drawing.Color.SkyBlue;
             this.leaderBoard.Cursor = System.Windows.Forms.Cursors.No;
             this.leaderBoard.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.leaderBoard.ForeColor = System.Drawing.Color.Transparent;
