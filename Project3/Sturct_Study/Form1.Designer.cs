@@ -134,7 +134,7 @@
             // 
             // lboxResult1
             // 
-            this.lboxResult1.BackColor = System.Drawing.Color.MistyRose;
+            this.lboxResult1.BackColor = System.Drawing.Color.LightGray;
             this.lboxResult1.Font = new System.Drawing.Font("굴림", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lboxResult1.FormattingEnabled = true;
             this.lboxResult1.ItemHeight = 35;
@@ -146,7 +146,7 @@
             // 
             // lboxResult2
             // 
-            this.lboxResult2.BackColor = System.Drawing.Color.MistyRose;
+            this.lboxResult2.BackColor = System.Drawing.Color.LightGray;
             this.lboxResult2.Font = new System.Drawing.Font("굴림", 13.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lboxResult2.FormattingEnabled = true;
             this.lboxResult2.ItemHeight = 35;
