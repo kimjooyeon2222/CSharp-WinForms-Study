@@ -32,35 +32,37 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.tboxConfigData = new System.Windows.Forms.TextBox();
             this.GroupBox = new System.Windows.Forms.GroupBox();
-            this.Label = new System.Windows.Forms.Label();
-            this.Label3 = new System.Windows.Forms.Label();
+            this.numData = new System.Windows.Forms.NumericUpDown();
+            this.cboxData = new System.Windows.Forms.CheckBox();
+            this.tboxData = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
+            this.Label3 = new System.Windows.Forms.Label();
+            this.Label = new System.Windows.Forms.Label();
             this.btnConfigSet = new System.Windows.Forms.Button();
             this.btnConfigRead = new System.Windows.Forms.Button();
-            this.tboxData = new System.Windows.Forms.TextBox();
-            this.cboxData = new System.Windows.Forms.CheckBox();
-            this.numData = new System.Windows.Forms.NumericUpDown();
             this.GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numData)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLoad
             // 
+            this.btnLoad.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnLoad.Location = new System.Drawing.Point(43, 40);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(207, 52);
             this.btnLoad.TabIndex = 0;
             this.btnLoad.Text = "Text 읽어오기";
-            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnSave.Location = new System.Drawing.Point(265, 40);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(219, 52);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Text 저장하기";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // tboxConfigData
             // 
@@ -86,23 +88,29 @@
             this.GroupBox.TabStop = false;
             this.GroupBox.Text = "Config";
             // 
-            // Label
+            // numData
             // 
-            this.Label.AutoSize = true;
-            this.Label.Location = new System.Drawing.Point(15, 41);
-            this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(94, 24);
-            this.Label.TabIndex = 0;
-            this.Label.Text = "1. Text:";
+            this.numData.Location = new System.Drawing.Point(198, 151);
+            this.numData.Name = "numData";
+            this.numData.Size = new System.Drawing.Size(120, 35);
+            this.numData.TabIndex = 5;
             // 
-            // Label3
+            // cboxData
             // 
-            this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(15, 153);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(124, 24);
-            this.Label3.TabIndex = 1;
-            this.Label3.Text = "3. Number:";
+            this.cboxData.AutoSize = true;
+            this.cboxData.Location = new System.Drawing.Point(222, 92);
+            this.cboxData.Name = "cboxData";
+            this.cboxData.Size = new System.Drawing.Size(84, 28);
+            this.cboxData.TabIndex = 4;
+            this.cboxData.Text = "CB1";
+            this.cboxData.UseVisualStyleBackColor = true;
+            // 
+            // tboxData
+            // 
+            this.tboxData.Location = new System.Drawing.Point(174, 30);
+            this.tboxData.Name = "tboxData";
+            this.tboxData.Size = new System.Drawing.Size(144, 35);
+            this.tboxData.TabIndex = 3;
             // 
             // Label2
             // 
@@ -113,47 +121,43 @@
             this.Label2.TabIndex = 2;
             this.Label2.Text = "2. Check Box:";
             // 
+            // Label3
+            // 
+            this.Label3.AutoSize = true;
+            this.Label3.Location = new System.Drawing.Point(15, 153);
+            this.Label3.Name = "Label3";
+            this.Label3.Size = new System.Drawing.Size(124, 24);
+            this.Label3.TabIndex = 1;
+            this.Label3.Text = "3. Number:";
+            // 
+            // Label
+            // 
+            this.Label.AutoSize = true;
+            this.Label.Location = new System.Drawing.Point(15, 41);
+            this.Label.Name = "Label";
+            this.Label.Size = new System.Drawing.Size(94, 24);
+            this.Label.TabIndex = 0;
+            this.Label.Text = "1. Text:";
+            // 
             // btnConfigSet
             // 
+            this.btnConfigSet.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnConfigSet.Location = new System.Drawing.Point(277, 453);
             this.btnConfigSet.Name = "btnConfigSet";
             this.btnConfigSet.Size = new System.Drawing.Size(207, 52);
             this.btnConfigSet.TabIndex = 4;
             this.btnConfigSet.Text = "Config 설정하기";
-            this.btnConfigSet.UseVisualStyleBackColor = true;
+            this.btnConfigSet.UseVisualStyleBackColor = false;
             // 
             // btnConfigRead
             // 
+            this.btnConfigRead.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnConfigRead.Location = new System.Drawing.Point(43, 453);
             this.btnConfigRead.Name = "btnConfigRead";
             this.btnConfigRead.Size = new System.Drawing.Size(207, 52);
             this.btnConfigRead.TabIndex = 5;
             this.btnConfigRead.Text = "Config 가져오기";
-            this.btnConfigRead.UseVisualStyleBackColor = true;
-            // 
-            // tboxData
-            // 
-            this.tboxData.Location = new System.Drawing.Point(144, 30);
-            this.tboxData.Name = "tboxData";
-            this.tboxData.Size = new System.Drawing.Size(174, 35);
-            this.tboxData.TabIndex = 3;
-            // 
-            // cboxData
-            // 
-            this.cboxData.AutoSize = true;
-            this.cboxData.Location = new System.Drawing.Point(199, 95);
-            this.cboxData.Name = "cboxData";
-            this.cboxData.Size = new System.Drawing.Size(84, 28);
-            this.cboxData.TabIndex = 4;
-            this.cboxData.Text = "CB1";
-            this.cboxData.UseVisualStyleBackColor = true;
-            // 
-            // numData
-            // 
-            this.numData.Location = new System.Drawing.Point(198, 153);
-            this.numData.Name = "numData";
-            this.numData.Size = new System.Drawing.Size(120, 35);
-            this.numData.TabIndex = 5;
+            this.btnConfigRead.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
