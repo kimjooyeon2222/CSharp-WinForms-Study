@@ -39,7 +39,7 @@
             // 
             // pMain
             // 
-            this.pMain.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pMain.BackColor = System.Drawing.SystemColors.Window;
             this.pMain.Location = new System.Drawing.Point(24, 24);
             this.pMain.Name = "pMain";
             this.pMain.Size = new System.Drawing.Size(600, 300);
