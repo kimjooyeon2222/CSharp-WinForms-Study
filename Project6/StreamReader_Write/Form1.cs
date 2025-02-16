@@ -21,5 +21,10 @@ namespace StreamReader_Write
         {
 
         }
+
+        private void tboxConfigData_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

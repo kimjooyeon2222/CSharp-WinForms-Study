@@ -72,6 +72,7 @@
             this.tboxConfigData.Name = "tboxConfigData";
             this.tboxConfigData.Size = new System.Drawing.Size(441, 112);
             this.tboxConfigData.TabIndex = 2;
+            this.tboxConfigData.TextChanged += new System.EventHandler(this.tboxConfigData_TextChanged);
             // 
             // GroupBox
             // 
@@ -81,6 +82,7 @@
             this.GroupBox.Controls.Add(this.Label2);
             this.GroupBox.Controls.Add(this.Label3);
             this.GroupBox.Controls.Add(this.Label);
+            this.GroupBox.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.GroupBox.Location = new System.Drawing.Point(43, 233);
             this.GroupBox.Name = "GroupBox";
             this.GroupBox.Size = new System.Drawing.Size(441, 203);
@@ -100,7 +102,7 @@
             this.cboxData.AutoSize = true;
             this.cboxData.Location = new System.Drawing.Point(222, 92);
             this.cboxData.Name = "cboxData";
-            this.cboxData.Size = new System.Drawing.Size(84, 28);
+            this.cboxData.Size = new System.Drawing.Size(87, 28);
             this.cboxData.TabIndex = 4;
             this.cboxData.Text = "CB1";
             this.cboxData.UseVisualStyleBackColor = true;
@@ -117,7 +119,7 @@
             this.Label2.AutoSize = true;
             this.Label2.Location = new System.Drawing.Point(15, 96);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(159, 24);
+            this.Label2.Size = new System.Drawing.Size(172, 24);
             this.Label2.TabIndex = 2;
             this.Label2.Text = "2. Check Box:";
             // 
@@ -126,7 +128,7 @@
             this.Label3.AutoSize = true;
             this.Label3.Location = new System.Drawing.Point(15, 153);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(124, 24);
+            this.Label3.Size = new System.Drawing.Size(134, 24);
             this.Label3.TabIndex = 1;
             this.Label3.Text = "3. Number:";
             // 
@@ -135,7 +137,7 @@
             this.Label.AutoSize = true;
             this.Label.Location = new System.Drawing.Point(15, 41);
             this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(94, 24);
+            this.Label.Size = new System.Drawing.Size(102, 24);
             this.Label.TabIndex = 0;
             this.Label.Text = "1. Text:";
             // 
