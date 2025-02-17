@@ -48,7 +48,7 @@
             // 
             // lblName
             // 
-            this.lblName.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblName.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.lblName.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblName.Location = new System.Drawing.Point(20, 350);
