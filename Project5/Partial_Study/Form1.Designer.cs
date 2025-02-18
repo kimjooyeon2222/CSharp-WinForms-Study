@@ -44,7 +44,7 @@
             // 
             // lboxItem
             // 
-            this.lboxItem.BackColor = System.Drawing.Color.LightBlue;
+            this.lboxItem.BackColor = System.Drawing.Color.MintCream;
             this.lboxItem.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lboxItem.FormattingEnabled = true;
             this.lboxItem.ItemHeight = 24;
