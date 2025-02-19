@@ -59,9 +59,12 @@ namespace StreamReader_Write
             if(SFDialog.ShowDialog() == DialogResult.OK)
             {
                 strFilePath = SFDialog.FileName;
-                StreamWriter swSFDialog = new StreamWriter(strFilePath);
+              /*  StreamWriter swSFDialog = new StreamWriter(strFilePath);
                 swSFDialog.WriteLine(tboxConfigData.Text);
-                swSFDialog.Close();
+                swSFDialog.Close();*/
+
+                File.WriteAllText(strFilePath, tboxConfigData.Text);
+
             }
         }
 
@@ -78,16 +81,26 @@ namespace StreamReader_Write
             if(OFDialog.ShowDialog() == DialogResult.OK)
             {
                 strFilePath = OFDialog.FileName;
-                StreamReader srOFDialog = new StreamReader(strFilePath);
+             /*   StreamReader srOFDialog = new StreamReader(strFilePath);
 
                 while (srOFDialog.EndOfStream == false)
                 {
                    sb.Append(srOFDialog.ReadLine() + strEnter);
-                }
+                }*/
+
+                sb.Append(File.ReadAllText(strFilePath));
                 tboxConfigData.Text = sb.ToString();
             }
 
         }
 
+        private void btnConfigRead_Click(object sender, EventArgs e)
+        {
+            string[] strConfig = tboxConfigData.Text.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+            tboxData.Text = strConfig[0];
+            cboxData.Checked = bool.Parse(strConfig[1]);
+            numData.Value = int.Parse(strConfig[2]);
+
+        }
     }
 }

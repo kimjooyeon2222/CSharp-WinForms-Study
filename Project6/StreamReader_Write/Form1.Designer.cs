@@ -166,6 +166,7 @@
             this.btnConfigRead.TabIndex = 5;
             this.btnConfigRead.Text = "Config 가져오기";
             this.btnConfigRead.UseVisualStyleBackColor = false;
+            this.btnConfigRead.Click += new System.EventHandler(this.btnConfigRead_Click);
             // 
             // OFDialog
             // 
