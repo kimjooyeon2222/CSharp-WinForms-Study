@@ -40,6 +40,8 @@
             this.Label = new System.Windows.Forms.Label();
             this.btnConfigSet = new System.Windows.Forms.Button();
             this.btnConfigRead = new System.Windows.Forms.Button();
+            this.SFDialog = new System.Windows.Forms.SaveFileDialog();
+            this.OFDialog = new System.Windows.Forms.OpenFileDialog();
             this.GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numData)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +55,7 @@
             this.btnLoad.TabIndex = 0;
             this.btnLoad.Text = "Text 읽어오기";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnSave
             // 
@@ -63,6 +66,7 @@
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Text 저장하기";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tboxConfigData
             // 
@@ -113,6 +117,7 @@
             this.tboxData.Name = "tboxData";
             this.tboxData.Size = new System.Drawing.Size(144, 35);
             this.tboxData.TabIndex = 3;
+            this.tboxData.TextChanged += new System.EventHandler(this.tboxData_TextChanged);
             // 
             // Label2
             // 
@@ -150,6 +155,7 @@
             this.btnConfigSet.TabIndex = 4;
             this.btnConfigSet.Text = "Config 설정하기";
             this.btnConfigSet.UseVisualStyleBackColor = false;
+            this.btnConfigSet.Click += new System.EventHandler(this.btnConfigSet_Click);
             // 
             // btnConfigRead
             // 
@@ -160,6 +166,10 @@
             this.btnConfigRead.TabIndex = 5;
             this.btnConfigRead.Text = "Config 가져오기";
             this.btnConfigRead.UseVisualStyleBackColor = false;
+            // 
+            // OFDialog
+            // 
+            this.OFDialog.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -197,6 +207,8 @@
         private System.Windows.Forms.NumericUpDown numData;
         private System.Windows.Forms.CheckBox cboxData;
         private System.Windows.Forms.TextBox tboxData;
+        private System.Windows.Forms.SaveFileDialog SFDialog;
+        private System.Windows.Forms.OpenFileDialog OFDialog;
     }
 }
 
