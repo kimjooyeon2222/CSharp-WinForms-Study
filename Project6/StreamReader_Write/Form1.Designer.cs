@@ -49,6 +49,7 @@
             // btnLoad
             // 
             this.btnLoad.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnLoad.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLoad.Location = new System.Drawing.Point(43, 40);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(207, 52);
@@ -60,6 +61,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnSave.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnSave.Location = new System.Drawing.Point(265, 40);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(219, 52);
@@ -100,6 +102,7 @@
             this.numData.Name = "numData";
             this.numData.Size = new System.Drawing.Size(120, 35);
             this.numData.TabIndex = 5;
+            this.numData.ValueChanged += new System.EventHandler(this.numData_ValueChanged);
             // 
             // cboxData
             // 
@@ -149,6 +152,7 @@
             // btnConfigSet
             // 
             this.btnConfigSet.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnConfigSet.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnConfigSet.Location = new System.Drawing.Point(277, 453);
             this.btnConfigSet.Name = "btnConfigSet";
             this.btnConfigSet.Size = new System.Drawing.Size(207, 52);
@@ -160,6 +164,7 @@
             // btnConfigRead
             // 
             this.btnConfigRead.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnConfigRead.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnConfigRead.Location = new System.Drawing.Point(43, 453);
             this.btnConfigRead.Name = "btnConfigRead";
             this.btnConfigRead.Size = new System.Drawing.Size(207, 52);

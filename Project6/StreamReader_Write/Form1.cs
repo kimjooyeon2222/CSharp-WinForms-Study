@@ -102,5 +102,10 @@ namespace StreamReader_Write
             numData.Value = int.Parse(strConfig[2]);
 
         }
+
+        private void numData_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
