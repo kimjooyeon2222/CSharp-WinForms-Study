@@ -44,7 +44,7 @@
             // 
             // lboxItem
             // 
-            this.lboxItem.BackColor = System.Drawing.Color.LimeGreen;
+            this.lboxItem.BackColor = System.Drawing.Color.Ivory;
             this.lboxItem.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lboxItem.FormattingEnabled = true;
             this.lboxItem.ItemHeight = 24;
@@ -113,7 +113,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Control;
             this.btnAdd.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnAdd.Location = new System.Drawing.Point(423, 321);
             this.btnAdd.Name = "btnAdd";
@@ -144,7 +144,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClear.BackColor = System.Drawing.SystemColors.Control;
             this.btnClear.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnClear.Location = new System.Drawing.Point(423, 391);
             this.btnClear.Name = "btnClear";
