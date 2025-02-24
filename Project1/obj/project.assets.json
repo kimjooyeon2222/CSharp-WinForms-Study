@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zpffj\\source\\repos\\Study_string1\\Project1\\Study_string1.csproj",
+      "projectUniqueName": "C:\\Users\\zpffj\\source\\repos\\CSharp_Study\\Project1\\Study_string1.csproj",
       "projectName": "Study_string1",
-      "projectPath": "C:\\Users\\zpffj\\source\\repos\\Study_string1\\Project1\\Study_string1.csproj",
+      "projectPath": "C:\\Users\\zpffj\\source\\repos\\CSharp_Study\\Project1\\Study_string1.csproj",
       "packagesPath": "C:\\Users\\zpffj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zpffj\\source\\repos\\Study_string1\\Project1\\obj\\",
+      "outputPath": "C:\\Users\\zpffj\\source\\repos\\CSharp_Study\\Project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zpffj\\AppData\\Roaming\\NuGet\\NuGet.Config",
