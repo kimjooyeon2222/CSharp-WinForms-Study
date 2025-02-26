@@ -54,9 +54,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label9.Location = new System.Drawing.Point(38, 307);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 24);
+            this.label9.Size = new System.Drawing.Size(65, 24);
             this.label9.TabIndex = 22;
             this.label9.Text = "Long";
             // 
@@ -99,36 +100,40 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.Location = new System.Drawing.Point(38, 242);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 24);
+            this.label3.Size = new System.Drawing.Size(87, 24);
             this.label3.TabIndex = 17;
             this.label3.Text = "Double";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(34, 365);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 24);
+            this.label1.Size = new System.Drawing.Size(122, 24);
             this.label1.TabIndex = 16;
             this.label1.Text = "Exception";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.Location = new System.Drawing.Point(38, 173);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 24);
+            this.label2.Size = new System.Drawing.Size(37, 24);
             this.label2.TabIndex = 15;
             this.label2.Text = "Int";
             // 
             // label
             // 
             this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label.Location = new System.Drawing.Point(38, 117);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(66, 24);
+            this.label.Size = new System.Drawing.Size(71, 24);
             this.label.TabIndex = 14;
             this.label.Text = "Short";
             // 
