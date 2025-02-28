@@ -139,6 +139,7 @@
             // 
             // 변환
             // 
+            this.변환.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.변환.Location = new System.Drawing.Point(726, 44);
             this.변환.Name = "변환";
             this.변환.Size = new System.Drawing.Size(111, 43);
