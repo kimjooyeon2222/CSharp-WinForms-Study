@@ -27,6 +27,7 @@ namespace DataType_Study
             int inumber = 0;
             double dnumber = 0;
             long lnumber = 0;
+            float fnumber = 0;
             label7.Text = "-";
 
             if (short.TryParse(textBox1.Text, out snumber))
@@ -35,23 +36,37 @@ namespace DataType_Study
             }
             else if (int.TryParse(textBox1.Text, out inumber))
             {
-
                 label6.Text = inumber.ToString();
             }
             else if (long.TryParse(textBox1.Text, out lnumber))
             {
                 label8.Text = lnumber.ToString();
             }
-            else if (double.TryParse(textBox1.Text, out dnumber))
+            else if (double.TryParse(textBox1.Text, out dnumber)) // double 먼저 실행
             {
-                label5.Text = dnumber.ToString();
+                if (float.TryParse(textBox1.Text, out fnumber))
+                {
+                    // float을 다시 double로 변환한 값과 원래 double 값 비교
+                    if ((double)fnumber == dnumber)
+                    {
+                        label10.Text = fnumber.ToString(); // float 값 사용
+                    }
+                    else
+                    {
+                        label5.Text = dnumber.ToString(); // double 값 사용 (더 정밀)
+                    }
+                }
+                else
+                {
+                    label5.Text = dnumber.ToString(); // float 변환 불가, double 사용
+                }
             }
-
             else
             {
                 label7.Text = "변환할 수 없음";
             }
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -104,6 +119,26 @@ namespace DataType_Study
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
         {
 
         }

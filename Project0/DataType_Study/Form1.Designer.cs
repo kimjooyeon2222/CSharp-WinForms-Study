@@ -40,12 +40,14 @@
             this.label = new System.Windows.Forms.Label();
             this.변환 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(172, 307);
+            this.label8.Location = new System.Drawing.Point(168, 354);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(23, 24);
             this.label8.TabIndex = 23;
@@ -55,7 +57,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.Location = new System.Drawing.Point(38, 307);
+            this.label9.Location = new System.Drawing.Point(34, 354);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 24);
             this.label9.TabIndex = 22;
@@ -64,7 +66,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(172, 365);
+            this.label7.Location = new System.Drawing.Point(168, 412);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(23, 24);
             this.label7.TabIndex = 21;
@@ -82,11 +84,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(172, 242);
+            this.label5.Location = new System.Drawing.Point(168, 289);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(23, 24);
             this.label5.TabIndex = 19;
             this.label5.Text = "0";
+            this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // label4
             // 
@@ -101,7 +104,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(38, 242);
+            this.label3.Location = new System.Drawing.Point(34, 289);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 24);
             this.label3.TabIndex = 17;
@@ -111,7 +114,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(34, 365);
+            this.label1.Location = new System.Drawing.Point(30, 412);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 24);
             this.label1.TabIndex = 16;
@@ -126,6 +129,7 @@
             this.label2.Size = new System.Drawing.Size(37, 24);
             this.label2.TabIndex = 15;
             this.label2.Text = "Int";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label
             // 
@@ -156,11 +160,34 @@
             this.textBox1.Size = new System.Drawing.Size(667, 35);
             this.textBox1.TabIndex = 12;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(172, 232);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(23, 24);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "0";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label11.Location = new System.Drawing.Point(38, 232);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(66, 24);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Float";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 572);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -195,6 +222,8 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button 변환;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 
