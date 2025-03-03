@@ -1,0 +1,10 @@
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\bin\Debug\StreamReader_Write.exe.config
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\bin\Debug\StreamReader_Write.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\bin\Debug\StreamReader_Write.pdb
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\obj\Debug\StreamReader_Write.csproj.AssemblyReference.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\obj\Debug\StreamReader_Write.Form1.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\obj\Debug\StreamReader_Write.Properties.Resources.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\obj\Debug\StreamReader_Write.csproj.GenerateResource.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\obj\Debug\StreamReader_Write.csproj.CoreCompileInputs.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\obj\Debug\StreamReader_Write.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project6\StreamReader_Write\obj\Debug\StreamReader_Write.pdb
