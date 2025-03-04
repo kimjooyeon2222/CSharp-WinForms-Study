@@ -94,6 +94,9 @@ namespace StreamReader_Write
 
                 sb.Append(File.ReadAllText(strFilePath));
                 tboxConfigData.Text = sb.ToString();
+                _dData.Clear();
+                _dData.Add();
+
             }
 
         }
