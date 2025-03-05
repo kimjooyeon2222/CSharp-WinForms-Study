@@ -47,23 +47,31 @@ namespace StreamReader_Write
 
             tboxConfigData.Text = sb.ToString();
 
+            _dData.Clear();
+            _dData.Add(CXMLControl._TEXT_DATA, strText);
+            _dData.Add(CXMLControl._CBOX_DATA, bChecked.ToString());
+            _dData.Add(CXMLControl._NUMBER_DATA, iNumber.ToString());
+
+
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             string strFilePath = string.Empty;
             SFDialog.InitialDirectory = Application.StartupPath; // 프로그램 실행 파일 위치
-            SFDialog.FileName = "*.txt";
-            SFDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            SFDialog.FileName = "*.xml";
+            SFDialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
 
             if(SFDialog.ShowDialog() == DialogResult.OK)
             {
                 strFilePath = SFDialog.FileName;
-              /*  StreamWriter swSFDialog = new StreamWriter(strFilePath);
-                swSFDialog.WriteLine(tboxConfigData.Text);
-                swSFDialog.Close();*/
+                /*  StreamWriter swSFDialog = new StreamWriter(strFilePath);
+                  swSFDialog.WriteLine(tboxConfigData.Text);
+                  swSFDialog.Close();*/
 
-                File.WriteAllText(strFilePath, tboxConfigData.Text);
+                //  File.WriteAllText(strFilePath, tboxConfigData.Text);
+                _XML.fXML_Writer(strFilePath,_dData);
 
             }
         }
@@ -74,8 +82,8 @@ namespace StreamReader_Write
             string strEnter = "\r\n";
 
             OFDialog.InitialDirectory = Application.StartupPath; // 프로그램 실행 파일 위치
-            OFDialog.FileName = "*.txt";
-            OFDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            OFDialog.FileName = "*.xml";
+            OFDialog.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
 
             StringBuilder sb = new StringBuilder();
             if(OFDialog.ShowDialog() == DialogResult.OK)
@@ -90,17 +98,26 @@ namespace StreamReader_Write
 
                 sb.Append(File.ReadAllText(strFilePath));
                 tboxConfigData.Text = sb.ToString();
+
+                _dData.Clear();
+                _dData = _XML.fXML_Reader(strFilePath);
+
             }
 
         }
 
         private void btnConfigRead_Click(object sender, EventArgs e)
         {
-            string[] strConfig = tboxConfigData.Text.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
-            tboxData.Text = strConfig[0];
-            cboxData.Checked = bool.Parse(strConfig[1]);
-            numData.Value = int.Parse(strConfig[2]);
+            /*  string[] strConfig = tboxConfigData.Text.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+              tboxData.Text = strConfig[0];
+              cboxData.Checked = bool.Parse(strConfig[1]);
+              numData.Value = int.Parse(strConfig[2]);
+  */
 
+
+            tboxData.Text = _dData[CXMLControl._TEXT_DATA];
+            cboxData.Checked = bool.Parse(_dData[CXMLControl._CBOX_DATA]);
+            numData.Value = int.Parse(_dData[CXMLControl._NUMBER_DATA]);
         }
 
         private void numData_ValueChanged(object sender, EventArgs e)
