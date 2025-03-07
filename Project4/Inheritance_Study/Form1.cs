@@ -39,21 +39,21 @@ namespace Inheritance_Study
                 if (lblName.Text == _cOC.strName)
                 {
                     fClearPanel();
-                    _cOC.fMove(-5);
+                    _cOC.fMove(-10);
                     fOneCycleDraw();
 
                 }
                 else if (lblName.Text == _cC.strName)
                 {
                     fClearPanel();
-                    _cC.fMove(-5);
+                    _cC.fMove(-10);
                     fCycleDraw();
 
                 }
                 else if (lblName.Text == _cCar.strName)
                 {
                     fClearPanel();
-                    _cCar.fMove(-5);
+                    _cCar.fMove(-10);
                     fCarDraw();
 
                 }
@@ -63,21 +63,21 @@ namespace Inheritance_Study
                 if (lblName.Text == _cOC.strName)
                 {
                     fClearPanel();
-                    _cOC.fMove(5);
+                    _cOC.fMove(10);
                     fOneCycleDraw();
 
                 }
                 else if (lblName.Text == _cC.strName)
                 {
                     fClearPanel();
-                    _cC.fMove(5);
+                    _cC.fMove(10);
                     fCycleDraw();
 
                 }
                 else if (lblName.Text == _cCar.strName)
                 {
                     fClearPanel();
-                    _cCar.fMove(5);
+                    _cCar.fMove(10);
                     fCarDraw();
 
                 }
@@ -152,21 +152,21 @@ namespace Inheritance_Study
             if (lblName.Text == _cOC.strName)
             {
                 fClearPanel();
-                _cOC.fMove(-5);
+                _cOC.fMove(-10);
                 fOneCycleDraw();
 
             }
             else if (lblName.Text == _cC.strName)
             {
                 fClearPanel();
-                _cC.fMove(-5);
+                _cC.fMove(-10);
                 fCycleDraw();
 
             }
             else if (lblName.Text == _cCar.strName)
             {
                 fClearPanel();
-                _cCar.fMove(-5);
+                _cCar.fMove(-10);
                 fCarDraw();
 
             }
@@ -178,21 +178,21 @@ namespace Inheritance_Study
             if (lblName.Text == _cOC.strName)
             {
                 fClearPanel();
-                _cOC.fMove(5);
+                _cOC.fMove(10);
                 fOneCycleDraw();
 
             }
             else if (lblName.Text == _cC.strName)
             {
                 fClearPanel();
-                _cC.fMove(5);
+                _cC.fMove(10);
                 fCycleDraw();
 
             }
            else if (lblName.Text == _cCar.strName)
             {
                 fClearPanel();
-                _cCar.fMove(5);
+                _cCar.fMove(10);
                 fCarDraw();
 
             }

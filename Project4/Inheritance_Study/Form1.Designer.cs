@@ -39,7 +39,7 @@
             // 
             // pMain
             // 
-            this.pMain.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pMain.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.pMain.Location = new System.Drawing.Point(24, 24);
             this.pMain.Name = "pMain";
             this.pMain.Size = new System.Drawing.Size(600, 300);
@@ -60,7 +60,7 @@
             // 
             // btnOneCycle
             // 
-            this.btnOneCycle.Font = new System.Drawing.Font("굴림", 4.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnOneCycle.Font = new System.Drawing.Font("굴림", 4.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnOneCycle.Location = new System.Drawing.Point(170, 350);
             this.btnOneCycle.Name = "btnOneCycle";
             this.btnOneCycle.Size = new System.Drawing.Size(159, 52);
@@ -71,7 +71,7 @@
             // 
             // btnCycle
             // 
-            this.btnCycle.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnCycle.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnCycle.Location = new System.Drawing.Point(335, 350);
             this.btnCycle.Name = "btnCycle";
             this.btnCycle.Size = new System.Drawing.Size(139, 52);
@@ -82,7 +82,7 @@
             // 
             // btnCar
             // 
-            this.btnCar.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnCar.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnCar.Location = new System.Drawing.Point(480, 349);
             this.btnCar.Name = "btnCar";
             this.btnCar.Size = new System.Drawing.Size(144, 52);
