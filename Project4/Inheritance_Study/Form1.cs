@@ -16,6 +16,7 @@ namespace Inheritance_Study
         COneCycle _cOC;
         CCycle _cC;
         CCar _cCar;
+        CBike _cBike;
 
         public Form1()
         {
@@ -28,6 +29,7 @@ namespace Inheritance_Study
             _cOC = new COneCycle("외발 자전거");
             _cC = new CCycle("자전거");
             _cCar = new CCar("자동차");
+            _cBike = new CBike("오토바이");
 
         }
 
@@ -57,6 +59,12 @@ namespace Inheritance_Study
                     fCarDraw();
 
                 }
+                else if(lblName.Text == _cBike.strName)
+                {
+                    fClearPanel();
+                    _cBike.fMove(-10);
+                    fBikeDraw();
+                }
             }
             else if (e.KeyCode == Keys.E)
             {
@@ -80,6 +88,12 @@ namespace Inheritance_Study
                     _cCar.fMove(10);
                     fCarDraw();
 
+                }
+                else if (lblName.Text == _cBike.strName)
+                {
+                    fClearPanel();
+                    _cBike.fMove(10);
+                    fBikeDraw();
                 }
             }
 
@@ -141,6 +155,17 @@ namespace Inheritance_Study
 
     }
 
+    private void fBikeDraw()
+    {
+        lblName.Text = _cBike.strName;
+        Graphics g = pMain.CreateGraphics();
+        Pen p = _cBike.fPenInfo();
+        g.DrawRectangle(p, _cBike._rtSquare1);
+        g.DrawEllipse(p, _cBike._rtCircle1);
+        g.DrawEllipse(p, _cBike._rtCircle2);
+
+    }
+
     private void fClearPanel()
         {
             pMain.Invalidate();
@@ -170,6 +195,13 @@ namespace Inheritance_Study
                 fCarDraw();
 
             }
+            else if (lblName.Text == _cBike.strName)
+            {
+                fClearPanel();
+                _cBike.fMove(-10);
+                fBikeDraw();
+            }
+
         }
 
         private void btnRight_Click(object sender, EventArgs e)
@@ -196,12 +228,18 @@ namespace Inheritance_Study
                 fCarDraw();
 
             }
+            else if (lblName.Text == _cBike.strName)
+            {
+                fClearPanel();
+                _cBike.fMove(10);
+                fBikeDraw();
+            }
         }
 
         private void btnBike_Click(object sender, EventArgs e)
         {
             fClearPanel();
-            //fBikeDraw();
+            fBikeDraw();
         }
     }
 }

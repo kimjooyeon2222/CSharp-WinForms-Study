@@ -14,9 +14,9 @@ namespace Inheritance_Study
         {
             strName = sName;
             _Pen = new Pen(Color.YellowGreen, 3);
-            _rtSquare1 = new Rectangle(25, 65, 60, 40);
+            _rtCircle1 = new Rectangle(30, 105, 20, 30);
             _rtCircle2 = new Rectangle(60, 105, 20, 30);
-            _rtSquare1 = new Rectangle(25, 25, 60, 80);
+            _rtSquare1 = new Rectangle(25, 65, 60, 40); //아랫몸통
 
         }
         public Pen fPenInfo()
