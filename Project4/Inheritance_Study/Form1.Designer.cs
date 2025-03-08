@@ -35,20 +35,21 @@
             this.btnCar = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
             this.btnLeft = new System.Windows.Forms.Button();
+            this.btnBike = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pMain
             // 
-            this.pMain.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.pMain.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.pMain.Location = new System.Drawing.Point(24, 24);
             this.pMain.Name = "pMain";
-            this.pMain.Size = new System.Drawing.Size(600, 300);
+            this.pMain.Size = new System.Drawing.Size(750, 300);
             this.pMain.TabIndex = 0;
             this.pMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pMain_Paint);
             // 
             // lblName
             // 
-            this.lblName.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblName.BackColor = System.Drawing.SystemColors.Info;
             this.lblName.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblName.Location = new System.Drawing.Point(20, 350);
@@ -83,18 +84,18 @@
             // btnCar
             // 
             this.btnCar.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnCar.Location = new System.Drawing.Point(480, 349);
+            this.btnCar.Location = new System.Drawing.Point(630, 352);
             this.btnCar.Name = "btnCar";
             this.btnCar.Size = new System.Drawing.Size(144, 52);
             this.btnCar.TabIndex = 4;
-            this.btnCar.Text = "3단계: 자동차";
+            this.btnCar.Text = "4단계: 자동차";
             this.btnCar.UseVisualStyleBackColor = true;
             this.btnCar.Click += new System.EventHandler(this.btnCar_Click);
             // 
             // btnRight
             // 
             this.btnRight.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnRight.Location = new System.Drawing.Point(416, 407);
+            this.btnRight.Location = new System.Drawing.Point(480, 407);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(170, 52);
             this.btnRight.TabIndex = 5;
@@ -105,18 +106,30 @@
             // btnLeft
             // 
             this.btnLeft.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnLeft.Location = new System.Drawing.Point(242, 408);
+            this.btnLeft.Location = new System.Drawing.Point(306, 408);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(168, 52);
             this.btnLeft.TabIndex = 6;
             this.btnLeft.Text = "<---";
             this.btnLeft.UseVisualStyleBackColor = true;
             // 
+            // btnBike
+            // 
+            this.btnBike.Font = new System.Drawing.Font("굴림", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnBike.Location = new System.Drawing.Point(480, 352);
+            this.btnBike.Name = "btnBike";
+            this.btnBike.Size = new System.Drawing.Size(144, 52);
+            this.btnBike.TabIndex = 7;
+            this.btnBike.Text = "3단계: 오토바이";
+            this.btnBike.UseVisualStyleBackColor = true;
+            this.btnBike.Click += new System.EventHandler(this.btnBike_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1061, 801);
+            this.ClientSize = new System.Drawing.Size(881, 508);
+            this.Controls.Add(this.btnBike);
             this.Controls.Add(this.btnLeft);
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.btnCar);
@@ -144,6 +157,7 @@
         private System.Windows.Forms.Button btnCar;
         private System.Windows.Forms.Button btnRight;
         private System.Windows.Forms.Button btnLeft;
+        private System.Windows.Forms.Button btnBike;
     }
 }
 

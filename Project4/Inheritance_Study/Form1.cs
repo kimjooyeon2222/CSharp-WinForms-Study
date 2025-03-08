@@ -198,8 +198,10 @@ namespace Inheritance_Study
             }
         }
 
-  
-
-
+        private void btnBike_Click(object sender, EventArgs e)
+        {
+            fClearPanel();
+            fBikeDraw();
+        }
     }
 }
