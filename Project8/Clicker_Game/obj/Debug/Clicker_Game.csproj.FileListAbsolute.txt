@@ -1,0 +1,10 @@
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\bin\Debug\Clicker_Game.exe.config
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\bin\Debug\Clicker_Game.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\bin\Debug\Clicker_Game.pdb
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\obj\Debug\Clicker_Game.csproj.AssemblyReference.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\obj\Debug\Clicker_Game.Form1.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\obj\Debug\Clicker_Game.Properties.Resources.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\obj\Debug\Clicker_Game.csproj.GenerateResource.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\obj\Debug\Clicker_Game.csproj.CoreCompileInputs.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\obj\Debug\Clicker_Game.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project8\Clicker_Game\obj\Debug\Clicker_Game.pdb
