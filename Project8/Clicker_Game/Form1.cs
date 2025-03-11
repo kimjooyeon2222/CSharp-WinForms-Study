@@ -19,8 +19,8 @@ namespace Clicker_Game
         private int i1Add = 1;
         private int i1Level = 1;
 
-        private int i3Add = 3;
-        private int i3Level = 1;
+        private int i5Add = 3;
+        private int i5Level = 1;
 
         private int i50Add = 0;
         private int i50Level = 0;
@@ -42,10 +42,10 @@ namespace Clicker_Game
         //타이머에서 호출 할 Event (Interval 간격 기준)
         private void OTimer_Tick(object sender, EventArgs e)
         {
-            iTick = i1Add + i3Add + i50Add;
+            iTick = i1Add + i5Add + i50Add;
             iTotal += iTick;
 
-            lblTickPoint.Text = string.Format("{0} (1:{1}), (3:{2}), (50:{3})", iTick.ToString(), i1Level.ToString(), i3Level.ToString(), i50Level.ToString());
+            lblTickPoint.Text = string.Format("{0} (1:{1}), (5:{2}), (50:{3})", iTick.ToString(), i1Level.ToString(), i5Level.ToString(), i50Level.ToString());
             lblTotal.Text = iTotal.ToString();
 
         }
@@ -66,13 +66,13 @@ namespace Clicker_Game
 
                     }
                     break;
-                case "btn3Add":
-                    if (iTotal > 300)
+                case "btn5Add":
+                    if (iTotal > 500)
                     {
-                        iTotal = iTotal - 300;
+                        iTotal = iTotal - 500;
 
-                        i3Level++;
-                        i1Add = 3 * i3Level;
+                        i5Level++;
+                        i5Add = 5 * i5Level;
 
                     }
                     break;
