@@ -1,4 +1,7 @@
-﻿namespace Clicker_Game
+﻿using System;
+using System.Windows.Forms;
+
+namespace Clicker_Game
 {
     partial class Form1
     {
@@ -154,12 +157,15 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosed += Form1_FormClosed;
             this.GroupBox.ResumeLayout(false);
             this.GroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
+
+      
 
         #endregion
 

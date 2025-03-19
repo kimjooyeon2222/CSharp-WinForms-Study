@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,13 @@ namespace Clicker_Game
     public partial class Form1 : Form
 
     {
+
+        Dictionary<string, string> _dData = new Dictionary<string, string>();
+        CXMLControl _xml = new CXMLControl();
+
+        string strPath = Application.StartupPath + "\\Save.xml";
+
+
         private double iTick = 0;
         private double iTotal = 0;
 
@@ -32,11 +40,41 @@ namespace Clicker_Game
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            if (File.Exists(strPath))
+            {
+                // File이 있을 경우 File Loading
+                _dData = _xml.fXML_Reader(strPath);
+
+                iTick = double.Parse(_dData[CXMLControl._TICK]);
+                iTotal = double.Parse(_dData[CXMLControl._TOTAL]);
+
+                i1Level = int.Parse(_dData[CXMLControl._LEVEL_1]);
+                i5Level = int.Parse(_dData[CXMLControl._LEVEL_5]);
+                i50Level = int.Parse(_dData[CXMLControl._LEVEL_50]);
+
+
+
+            }
+
             Timer oTimer = new Timer();
             oTimer.Enabled = true;
             oTimer.Interval = 100;
             oTimer.Tick += OTimer_Tick;
             oTimer.Start();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _dData.Clear();
+            _dData.Add(CXMLControl._TICK, iTick.ToString());
+            _dData.Add(CXMLControl._TOTAL, iTotal.ToString());
+            _dData.Add(CXMLControl._LEVEL_1, i1Level.ToString());
+            _dData.Add(CXMLControl._LEVEL_5, i5Level.ToString());
+            _dData.Add(CXMLControl._LEVEL_50, i50Level.ToString());
+
+            _xml.fXML_Writer(strPath, _dData);
+
         }
 
         //타이머에서 호출 할 Event (Interval 간격 기준)
