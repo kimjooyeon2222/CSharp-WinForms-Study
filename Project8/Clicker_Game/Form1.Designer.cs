@@ -58,7 +58,7 @@ namespace Clicker_Game
             // 
             // lblTotal
             // 
-            this.lblTotal.BackColor = System.Drawing.Color.LightPink;
+            this.lblTotal.BackColor = System.Drawing.Color.Pink;
             this.lblTotal.Location = new System.Drawing.Point(6, 70);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(711, 99);
@@ -157,7 +157,6 @@ namespace Clicker_Game
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.FormClosed += Form1_FormClosed;
             this.GroupBox.ResumeLayout(false);
             this.GroupBox.PerformLayout();
             this.ResumeLayout(false);
