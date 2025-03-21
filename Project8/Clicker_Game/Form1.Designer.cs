@@ -49,6 +49,7 @@ namespace Clicker_Game
             this.GroupBox.Controls.Add(this.lblTotal);
             this.GroupBox.Controls.Add(this.lblTickPoint1);
             this.GroupBox.Controls.Add(this.lblTickPoint);
+            this.GroupBox.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.GroupBox.Location = new System.Drawing.Point(26, 34);
             this.GroupBox.Name = "GroupBox";
             this.GroupBox.Size = new System.Drawing.Size(723, 191);
@@ -71,7 +72,7 @@ namespace Clicker_Game
             this.lblTickPoint1.AutoSize = true;
             this.lblTickPoint1.Location = new System.Drawing.Point(6, 31);
             this.lblTickPoint1.Name = "lblTickPoint1";
-            this.lblTickPoint1.Size = new System.Drawing.Size(121, 24);
+            this.lblTickPoint1.Size = new System.Drawing.Size(132, 24);
             this.lblTickPoint1.TabIndex = 1;
             this.lblTickPoint1.Text = "Tick Point:";
             // 
