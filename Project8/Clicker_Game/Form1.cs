@@ -18,7 +18,7 @@ namespace Clicker_Game
         Dictionary<string, string> _dData = new Dictionary<string, string>();
         CXMLControl _xml = new CXMLControl();
 
-        string strPath = Application.StartupPath + "\\Save.xml";
+        string strPath = Application.StartupPath + "\\Save.txt";
 
 
         private double iTick = 0;

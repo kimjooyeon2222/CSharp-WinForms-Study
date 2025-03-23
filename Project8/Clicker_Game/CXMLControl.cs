@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,6 +60,9 @@ namespace Clicker_Game
 
         public void fXML_Writer(string strXMLPath, Dictionary<string, string> DXMLConfig)
         {
+
+            StringBuilder sb = new StringBuilder();
+
             using (XmlWriter wr = XmlWriter.Create(strXMLPath))
             {
                 wr.WriteStartDocument();
@@ -74,6 +78,9 @@ namespace Clicker_Game
                 wr.WriteEndElement();
                 wr.WriteEndDocument();
             }
+
+            string strRijndaelText = CRijndael.EncryptString(sb.ToString(), CRijndael._bkey);
+            File.WriteAllText(strXMLPath, strRijndaelText);
         }  
 
     }
