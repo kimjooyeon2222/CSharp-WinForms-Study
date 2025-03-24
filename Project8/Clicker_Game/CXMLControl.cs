@@ -60,10 +60,12 @@ namespace Clicker_Game
 
         public void fXML_Writer(string strXMLPath, Dictionary<string, string> DXMLConfig)
         {
-
             StringBuilder sb = new StringBuilder();
 
-            using (XmlWriter wr = XmlWriter.Create(strXMLPath))
+            XmlWriterSettings settings = new XmlWriterSettings();
+            settings.Indent = true;
+
+            using (XmlWriter wr = XmlWriter.Create(sb, settings)) // 여기에 StringBuilder 넣음
             {
                 wr.WriteStartDocument();
                 wr.WriteStartElement("SETTING");
@@ -81,7 +83,7 @@ namespace Clicker_Game
 
             string strRijndaelText = CRijndael.EncryptString(sb.ToString(), CRijndael._bkey);
             File.WriteAllText(strXMLPath, strRijndaelText);
-        }  
+        }
 
     }
 }
