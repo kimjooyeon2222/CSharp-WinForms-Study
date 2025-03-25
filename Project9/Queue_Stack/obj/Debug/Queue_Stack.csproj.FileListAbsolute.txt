@@ -1,0 +1,10 @@
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\bin\Debug\Queue_Stack.exe.config
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\bin\Debug\Queue_Stack.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\bin\Debug\Queue_Stack.pdb
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\obj\Debug\Queue_Stack.csproj.AssemblyReference.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\obj\Debug\Queue_Stack.Form1.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\obj\Debug\Queue_Stack.Properties.Resources.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\obj\Debug\Queue_Stack.csproj.GenerateResource.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\obj\Debug\Queue_Stack.csproj.CoreCompileInputs.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\obj\Debug\Queue_Stack.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project9\Queue_Stack\obj\Debug\Queue_Stack.pdb
