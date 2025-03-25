@@ -25,7 +25,7 @@ namespace Clicker_Game
 
             Dictionary<string,string> DXMLConfig = new Dictionary<string,string>();
 
-            using (XmlReader rd = XmlReader.Create(strXMLPath))
+            using (XmlReader rd = XmlReader.Create(new StringReader(strDECText)))
             {
                 while (rd.Read())
                 {
