@@ -19,6 +19,9 @@ namespace Clicker_Game
 
         public Dictionary<string, string> fXML_Reader(string strXMLPath)
         {
+            string strRijndaelText = File.ReadAllText(strXMLPath);
+            string strDECText = CRijndael.DecryptString(strRijndaelText, CRijndael._bkey);
+
 
             Dictionary<string,string> DXMLConfig = new Dictionary<string,string>();
 
