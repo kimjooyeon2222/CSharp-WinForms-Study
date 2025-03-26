@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Queue_Stack
 {
@@ -113,6 +114,25 @@ namespace Queue_Stack
 
 
 
+        }
+
+        private void btnDataOut_Click(object sender, EventArgs e)
+        {
+            //Queue에 Data를 입력
+            if (_Queue.Count > 0)
+            {
+                _Queue.Dequeue();
+                fQueueDataDisplay();
+
+            }
+
+            //Stack에 Data를 입력
+            if (_Stack.Count > 0)
+            {
+                _Stack.Pop();
+                fStackDataDisplay();
+
+            }
         }
     }
 }

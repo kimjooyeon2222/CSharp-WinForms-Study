@@ -282,6 +282,7 @@
             this.btnDataOut.TabIndex = 3;
             this.btnDataOut.Text = "Out";
             this.btnDataOut.UseVisualStyleBackColor = true;
+            this.btnDataOut.Click += new System.EventHandler(this.btnDataOut_Click);
             // 
             // label1
             // 
