@@ -12,6 +12,10 @@ namespace Queue_Stack
 {
     public partial class Form1 : Form
     {
+
+        Queue<int> _Queue = new Queue<int>(6);
+        Stack<int> _Stack = new Stack<int>(6);
+
         public Form1()
         {
             InitializeComponent();
