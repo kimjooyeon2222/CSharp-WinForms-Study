@@ -64,11 +64,11 @@ namespace Queue_Stack
 
         private void btnDataIn_Click(object sender, EventArgs e)
         {
-            Random rd  = new Random();
+            Random rd = new Random();
             int iData = rd.Next(1, 101);
 
             //Queue에 Data를 입력
-            if(_Queue.Count < 6)
+            if (_Queue.Count < 6)
             {
                 _Queue.Enqueue(iData);
                 fQueueDataDisplay();
@@ -76,10 +76,10 @@ namespace Queue_Stack
             }
 
             //Stack에 Data를 입력
-            if(_Stack.Count < 6) 
+            if (_Stack.Count < 6)
             {
-             _Stack.Push(iData);
-            fStackDataDisplay();
+                _Stack.Push(iData);
+                fStackDataDisplay();
 
             }
         }
@@ -87,7 +87,7 @@ namespace Queue_Stack
 
         private void fQueueDataDisplay()
         {
-            int[] iArray =  _Queue.ToArray();
+            int[] iArray = _Queue.ToArray();
             Array.Resize(ref iArray, 6);
 
             lblQueue1.Text = (iArray[0] == 0 ? "" : iArray[0].ToString());
@@ -118,6 +118,11 @@ namespace Queue_Stack
 
         private void btnDataOut_Click(object sender, EventArgs e)
         {
+            fDataOut();
+        }
+
+        private void fDataOut()
+        {
             //Queue에 Data를 입력
             if (_Queue.Count > 0)
             {
@@ -133,6 +138,33 @@ namespace Queue_Stack
                 fStackDataDisplay();
 
             }
+        }
+
+
+        Timer _oTimer = new Timer();
+        bool _bTimer = false; //Timer 스위치
+
+        private void btnDataAutoOut_Click(object sender, EventArgs e)
+        {
+            if (_bTimer)
+            {
+                _oTimer.Stop();
+                _bTimer = false;
+            }
+            else
+            {
+                _oTimer.Interval = 2000;
+                _oTimer.Tick += _oTimer_Tick;
+                _oTimer.Start();
+
+                _bTimer = true;
+
+            }
+        }
+
+        private void _oTimer_Tick(object sender, EventArgs e)
+        {
+            fDataOut();
         }
     }
 }

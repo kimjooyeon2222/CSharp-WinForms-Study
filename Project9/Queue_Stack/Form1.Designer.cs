@@ -273,6 +273,7 @@
             this.btnDataAutoOut.TabIndex = 2;
             this.btnDataAutoOut.Text = "Auto Out";
             this.btnDataAutoOut.UseVisualStyleBackColor = true;
+            this.btnDataAutoOut.Click += new System.EventHandler(this.btnDataAutoOut_Click);
             // 
             // btnDataOut
             // 
