@@ -60,5 +60,25 @@ namespace Queue_Stack
         {
 
         }
+
+        private void btnDataIn_Click(object sender, EventArgs e)
+        {
+            Random rd  = new Random();
+            int iData = rd.Next(1, 101);
+
+            //Queue에 Data를 입력
+            if(_Queue.Count < 6)
+            {
+                _Queue.Enqueue(iData);
+
+            }
+
+            //Stack에 Data를 입력
+            if(_Stack.Count < 6) 
+            {
+             _Stack.Push(iData);
+
+            }
+        }
     }
 }

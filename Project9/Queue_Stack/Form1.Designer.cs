@@ -47,6 +47,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblStack6 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.lblStack1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblStack2 = new System.Windows.Forms.Label();
@@ -57,8 +59,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.lblStack5 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.lblStack6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -263,6 +263,7 @@
             this.btnDataIn.TabIndex = 1;
             this.btnDataIn.Text = "In";
             this.btnDataIn.UseVisualStyleBackColor = true;
+            this.btnDataIn.Click += new System.EventHandler(this.btnDataIn_Click);
             // 
             // btnDataAutoOut
             // 
@@ -332,6 +333,32 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(467, 236);
             this.tableLayoutPanel2.TabIndex = 6;
+            // 
+            // lblStack6
+            // 
+            this.lblStack6.AutoSize = true;
+            this.lblStack6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblStack6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblStack6.Location = new System.Drawing.Point(3, 198);
+            this.lblStack6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.lblStack6.Name = "lblStack6";
+            this.lblStack6.Size = new System.Drawing.Size(361, 38);
+            this.lblStack6.TabIndex = 16;
+            this.lblStack6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.SystemColors.Control;
+            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label19.Location = new System.Drawing.Point(367, 195);
+            this.label19.Margin = new System.Windows.Forms.Padding(0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(100, 41);
+            this.label19.TabIndex = 15;
+            this.label19.Text = "[5]";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // lblStack1
             // 
@@ -462,32 +489,6 @@
             this.label18.Text = "[4]";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.SystemColors.Control;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Location = new System.Drawing.Point(367, 195);
-            this.label19.Margin = new System.Windows.Forms.Padding(0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(100, 41);
-            this.label19.TabIndex = 15;
-            this.label19.Text = "[5]";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // lblStack6
-            // 
-            this.lblStack6.AutoSize = true;
-            this.lblStack6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblStack6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblStack6.Location = new System.Drawing.Point(3, 198);
-            this.lblStack6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.lblStack6.Name = "lblStack6";
-            this.lblStack6.Size = new System.Drawing.Size(361, 38);
-            this.lblStack6.TabIndex = 16;
-            this.lblStack6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
