@@ -98,6 +98,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label13.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(0, 70);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
@@ -112,6 +113,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label12.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(260, 70);
             this.label12.Margin = new System.Windows.Forms.Padding(0);
@@ -126,6 +128,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(130, 70);
             this.label11.Margin = new System.Windows.Forms.Padding(0);
@@ -140,6 +143,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(390, 70);
             this.label10.Margin = new System.Windows.Forms.Padding(0);
@@ -154,6 +158,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(650, 70);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
@@ -168,6 +173,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(520, 70);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
@@ -257,49 +263,57 @@
             // 
             // btnDataIn
             // 
+            this.btnDataIn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDataIn.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnDataIn.Location = new System.Drawing.Point(36, 212);
             this.btnDataIn.Name = "btnDataIn";
             this.btnDataIn.Size = new System.Drawing.Size(134, 42);
             this.btnDataIn.TabIndex = 1;
             this.btnDataIn.Text = "In";
-            this.btnDataIn.UseVisualStyleBackColor = true;
+            this.btnDataIn.UseVisualStyleBackColor = false;
             this.btnDataIn.Click += new System.EventHandler(this.btnDataIn_Click);
             // 
             // btnDataAutoOut
             // 
+            this.btnDataAutoOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDataAutoOut.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnDataAutoOut.Location = new System.Drawing.Point(564, 212);
             this.btnDataAutoOut.Name = "btnDataAutoOut";
             this.btnDataAutoOut.Size = new System.Drawing.Size(134, 42);
             this.btnDataAutoOut.TabIndex = 2;
             this.btnDataAutoOut.Text = "Auto Out";
-            this.btnDataAutoOut.UseVisualStyleBackColor = true;
+            this.btnDataAutoOut.UseVisualStyleBackColor = false;
             this.btnDataAutoOut.Click += new System.EventHandler(this.btnDataAutoOut_Click);
             // 
             // btnDataOut
             // 
+            this.btnDataOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDataOut.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnDataOut.Location = new System.Drawing.Point(705, 212);
             this.btnDataOut.Name = "btnDataOut";
             this.btnDataOut.Size = new System.Drawing.Size(131, 42);
             this.btnDataOut.TabIndex = 3;
             this.btnDataOut.Text = "Out";
-            this.btnDataOut.UseVisualStyleBackColor = true;
+            this.btnDataOut.UseVisualStyleBackColor = false;
             this.btnDataOut.Click += new System.EventHandler(this.btnDataOut_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(33, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 24);
+            this.label1.Size = new System.Drawing.Size(82, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "Queue";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.Location = new System.Drawing.Point(33, 515);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 24);
+            this.label2.Size = new System.Drawing.Size(74, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "Stack";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -325,8 +339,8 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(223, 303);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.10169F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.94915F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -335,6 +349,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(467, 236);
             this.tableLayoutPanel2.TabIndex = 6;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // lblStack6
             // 
@@ -353,6 +368,7 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.SystemColors.Control;
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label19.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label19.Location = new System.Drawing.Point(367, 195);
             this.label19.Margin = new System.Windows.Forms.Padding(0);
             this.label19.Name = "label19";
@@ -370,7 +386,7 @@
             this.lblStack1.Location = new System.Drawing.Point(3, 0);
             this.lblStack1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.lblStack1.Name = "lblStack1";
-            this.lblStack1.Size = new System.Drawing.Size(361, 36);
+            this.lblStack1.Size = new System.Drawing.Size(361, 35);
             this.lblStack1.TabIndex = 5;
             this.lblStack1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -379,10 +395,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.Location = new System.Drawing.Point(367, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 39);
+            this.label4.Size = new System.Drawing.Size(100, 38);
             this.label4.TabIndex = 6;
             this.label4.Text = "[0]";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -393,10 +410,10 @@
             this.lblStack2.AutoSize = true;
             this.lblStack2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblStack2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblStack2.Location = new System.Drawing.Point(3, 42);
+            this.lblStack2.Location = new System.Drawing.Point(3, 41);
             this.lblStack2.Margin = new System.Windows.Forms.Padding(3);
             this.lblStack2.Name = "lblStack2";
-            this.lblStack2.Size = new System.Drawing.Size(361, 33);
+            this.lblStack2.Size = new System.Drawing.Size(361, 34);
             this.lblStack2.TabIndex = 7;
             this.lblStack2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -405,10 +422,11 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(367, 39);
+            this.label6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Location = new System.Drawing.Point(367, 38);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 39);
+            this.label6.Size = new System.Drawing.Size(100, 40);
             this.label6.TabIndex = 8;
             this.label6.Text = "[1]";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -431,6 +449,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.Control;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label14.Location = new System.Drawing.Point(367, 78);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
@@ -457,6 +476,7 @@
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.SystemColors.Control;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label16.Location = new System.Drawing.Point(367, 117);
             this.label16.Margin = new System.Windows.Forms.Padding(0);
             this.label16.Name = "label16";
@@ -483,6 +503,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.SystemColors.Control;
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label18.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label18.Location = new System.Drawing.Point(367, 156);
             this.label18.Margin = new System.Windows.Forms.Padding(0);
             this.label18.Name = "label18";
