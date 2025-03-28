@@ -186,7 +186,7 @@
             // lblQueue1
             // 
             this.lblQueue1.AutoSize = true;
-            this.lblQueue1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblQueue1.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblQueue1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQueue1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblQueue1.Location = new System.Drawing.Point(653, 3);
@@ -199,7 +199,7 @@
             // lblQueue2
             // 
             this.lblQueue2.AutoSize = true;
-            this.lblQueue2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblQueue2.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblQueue2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQueue2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblQueue2.Location = new System.Drawing.Point(523, 3);
@@ -212,7 +212,7 @@
             // lblQueue3
             // 
             this.lblQueue3.AutoSize = true;
-            this.lblQueue3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblQueue3.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblQueue3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQueue3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblQueue3.Location = new System.Drawing.Point(393, 3);
@@ -225,7 +225,7 @@
             // lblQueue4
             // 
             this.lblQueue4.AutoSize = true;
-            this.lblQueue4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblQueue4.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblQueue4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQueue4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblQueue4.Location = new System.Drawing.Point(263, 3);
@@ -238,7 +238,7 @@
             // lblQueue5
             // 
             this.lblQueue5.AutoSize = true;
-            this.lblQueue5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblQueue5.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblQueue5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQueue5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblQueue5.Location = new System.Drawing.Point(133, 3);
@@ -251,7 +251,7 @@
             // lblQueue6
             // 
             this.lblQueue6.AutoSize = true;
-            this.lblQueue6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblQueue6.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblQueue6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblQueue6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblQueue6.Location = new System.Drawing.Point(0, 3);
@@ -354,7 +354,7 @@
             // lblStack6
             // 
             this.lblStack6.AutoSize = true;
-            this.lblStack6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblStack6.BackColor = System.Drawing.Color.LightCoral;
             this.lblStack6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack6.Location = new System.Drawing.Point(3, 198);
             this.lblStack6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
@@ -381,7 +381,7 @@
             // lblStack1
             // 
             this.lblStack1.AutoSize = true;
-            this.lblStack1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblStack1.BackColor = System.Drawing.Color.LightCoral;
             this.lblStack1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack1.Location = new System.Drawing.Point(3, 0);
             this.lblStack1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
@@ -408,7 +408,7 @@
             // lblStack2
             // 
             this.lblStack2.AutoSize = true;
-            this.lblStack2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblStack2.BackColor = System.Drawing.Color.LightCoral;
             this.lblStack2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack2.Location = new System.Drawing.Point(3, 41);
             this.lblStack2.Margin = new System.Windows.Forms.Padding(3);
@@ -435,7 +435,7 @@
             // lblStack3
             // 
             this.lblStack3.AutoSize = true;
-            this.lblStack3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblStack3.BackColor = System.Drawing.Color.LightCoral;
             this.lblStack3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack3.Location = new System.Drawing.Point(3, 81);
             this.lblStack3.Margin = new System.Windows.Forms.Padding(3);
@@ -462,7 +462,7 @@
             // lblStack4
             // 
             this.lblStack4.AutoSize = true;
-            this.lblStack4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblStack4.BackColor = System.Drawing.Color.LightCoral;
             this.lblStack4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack4.Location = new System.Drawing.Point(3, 120);
             this.lblStack4.Margin = new System.Windows.Forms.Padding(3);
@@ -489,7 +489,7 @@
             // lblStack5
             // 
             this.lblStack5.AutoSize = true;
-            this.lblStack5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblStack5.BackColor = System.Drawing.Color.LightCoral;
             this.lblStack5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack5.Location = new System.Drawing.Point(3, 159);
             this.lblStack5.Margin = new System.Windows.Forms.Padding(3);
