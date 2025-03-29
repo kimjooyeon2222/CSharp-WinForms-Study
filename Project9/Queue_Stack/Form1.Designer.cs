@@ -263,7 +263,7 @@
             // 
             // btnDataIn
             // 
-            this.btnDataIn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDataIn.BackColor = System.Drawing.Color.Tan;
             this.btnDataIn.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnDataIn.Location = new System.Drawing.Point(36, 212);
             this.btnDataIn.Name = "btnDataIn";
@@ -275,7 +275,7 @@
             // 
             // btnDataAutoOut
             // 
-            this.btnDataAutoOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDataAutoOut.BackColor = System.Drawing.Color.Tan;
             this.btnDataAutoOut.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnDataAutoOut.Location = new System.Drawing.Point(564, 212);
             this.btnDataAutoOut.Name = "btnDataAutoOut";
@@ -287,7 +287,7 @@
             // 
             // btnDataOut
             // 
-            this.btnDataOut.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDataOut.BackColor = System.Drawing.Color.Tan;
             this.btnDataOut.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnDataOut.Location = new System.Drawing.Point(705, 212);
             this.btnDataOut.Name = "btnDataOut";
