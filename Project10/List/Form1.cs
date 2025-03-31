@@ -15,8 +15,8 @@ namespace List
     {
 
         List<string> _strList = new List<string>();
-        
-        ArrayList _arList = new ArrayList ();
+
+        ArrayList _arList = new ArrayList();
 
 
 
@@ -68,7 +68,7 @@ namespace List
             /*_arList.Add(strSelectText);
             _arList.Add(1);*/
             fUIDisplay();
-
+            
         }
 
         private void fUIDisplay()
@@ -78,7 +78,7 @@ namespace List
             int iPizza = 0;
             int iIce = 0;
 
-            foreach(string oitem in _strList)
+            foreach (string oitem in _strList)
             {
                 switch (oitem)
                 {
@@ -106,5 +106,6 @@ namespace List
             lblTotalCount.Text = _strList.Count.ToString();
 
 
+        }
     }
 }
