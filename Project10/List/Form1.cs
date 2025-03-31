@@ -23,6 +23,7 @@ namespace List
         public Form1()
         {
             InitializeComponent();
+            dgViewList.Columns.Add("dgValue", "Value"); // add Column
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -68,7 +69,27 @@ namespace List
             /*_arList.Add(strSelectText);
             _arList.Add(1);*/
             fUIDisplay();
-            
+            fDataGridViewDisplay();
+        }
+
+        private void fDataGridViewDisplay()
+        {
+            dgViewList.Rows.Clear();
+
+
+            foreach (string oitem in _strList)
+            {
+                dgViewList.Rows.Add(oitem);
+            }
+
+
+            foreach (DataGridViewRow oRow in dgViewList.Rows)
+            {
+                oRow.HeaderCell.Value = oRow.Index.ToString();
+
+            }
+
+            dgViewList.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
 
         private void fUIDisplay()
