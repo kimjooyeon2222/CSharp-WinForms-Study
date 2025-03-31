@@ -67,8 +67,44 @@ namespace List
             _strList.Add(strSelectText);
             /*_arList.Add(strSelectText);
             _arList.Add(1);*/
+            fUIDisplay();
 
         }
+
+        private void fUIDisplay()
+        {
+            int iCake = 0;
+            int iBurger = 0;
+            int iPizza = 0;
+            int iIce = 0;
+
+            foreach(string oitem in _strList)
+            {
+                switch (oitem)
+                {
+                    case "cake":
+                        iCake++;
+                        break;
+                    case "burger":
+                        iBurger++;
+                        break;
+                    case "pizza":
+                        iPizza++;
+                        break;
+                    case "ice":
+                        iIce++;
+                        break;
+
+                }
+            }
+
+            lblPick1.Text = iCake.ToString();
+            lblPick2.Text = iBurger.ToString();
+            lblPick3.Text = iPizza.ToString();
+            lblPick4.Text = iIce.ToString();
+
+            lblTotalCount.Text = _strList.Count.ToString();
+
 
     }
 }
