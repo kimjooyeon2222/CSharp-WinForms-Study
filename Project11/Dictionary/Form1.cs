@@ -14,6 +14,40 @@ namespace Dictionary
     public partial class Form1 : Form
     {
         
+        enum enBossName
+        {
+           주연,
+           혜원,
+           경동,
+           민정,
+    
+        }
+
+        enum enClassName
+        {
+          진,
+          정국,
+          RM,
+          지민,
+          제이홉,
+          뷔,
+          슈가,
+
+          은비,
+          사쿠라,
+          해원,
+          예나,
+          채연,
+          채원,
+          민주,
+          히토미,
+          유리,
+          유진,
+          원영,
+          나코,
+
+        }
+
         List<string> _strList = new List<string>();
 
         ArrayList _arList = new ArrayList();
