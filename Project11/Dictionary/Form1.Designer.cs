@@ -151,7 +151,7 @@
             // lblPick4
             // 
             this.lblPick4.AutoSize = true;
-            this.lblPick4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblPick4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPick4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPick4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPick4.Location = new System.Drawing.Point(573, 159);
@@ -164,7 +164,7 @@
             // lblPick3
             // 
             this.lblPick3.AutoSize = true;
-            this.lblPick3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblPick3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPick3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPick3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPick3.Location = new System.Drawing.Point(383, 159);
@@ -177,7 +177,7 @@
             // lblPick2
             // 
             this.lblPick2.AutoSize = true;
-            this.lblPick2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblPick2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPick2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPick2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPick2.Location = new System.Drawing.Point(193, 159);
@@ -238,7 +238,7 @@
             // lblPick1
             // 
             this.lblPick1.AutoSize = true;
-            this.lblPick1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblPick1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPick1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPick1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPick1.Location = new System.Drawing.Point(3, 159);
