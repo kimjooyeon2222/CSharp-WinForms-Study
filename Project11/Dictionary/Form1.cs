@@ -170,10 +170,10 @@ namespace Dictionary
                 }
             }
 
-            lblPick1.Text = iCake.ToString();
-            lblPick2.Text = iBurger.ToString();
-            lblPick3.Text = iPizza.ToString();
-            lblPick4.Text = iIce.ToString();
+            lblPick1.Text = i주연.ToString();
+            lblPick2.Text = i혜원.ToString();
+            lblPick3.Text = i경동.ToString();
+            lblPick4.Text = i민정.ToString();
 
             lblTotalCount.Text = _strList.Count.ToString();
 
