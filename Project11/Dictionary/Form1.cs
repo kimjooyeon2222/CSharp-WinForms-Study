@@ -155,16 +155,16 @@ namespace Dictionary
                 switch (oitem)
                 {
                     case "주연":
-                        iCake++;
+                        i주연++;
                         break;
                     case "혜원":
-                        iBurger++;
+                        i혜원++;
                         break;
                     case "경동":
-                        iPizza++;
+                        i경동++;
                         break;
                     case "민정":
-                        iIce++;
+                        i민정++;
                         break;
 
                 }
