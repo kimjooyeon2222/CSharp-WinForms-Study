@@ -1,0 +1,7 @@
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\Dictionary.csproj.AssemblyReference.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\Dictionary.Form1.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\List.Properties.Resources.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\Dictionary.csproj.GenerateResource.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\Dictionary.csproj.CoreCompileInputs.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\List.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\List.pdb

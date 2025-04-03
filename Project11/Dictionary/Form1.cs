@@ -52,12 +52,17 @@ namespace Dictionary
 
         ArrayList _arList = new ArrayList();
 
+        int iPlayerCount = 0;
+
+        Hashtable _ht = new Hashtable();
+        Dictionary<string, string> _dic = new Dictionary<string, string>();
+        
 
 
         public Form1()
         {
             InitializeComponent();
-            dgViewList.Columns.Add("dgValue", "Value"); // add Column
+            //dgViewList.Columns.Add("dgValue", "Value"); // add Column
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -83,27 +88,39 @@ namespace Dictionary
             switch (pbox.Name)
             {
                 case "pbox1":
-                    strSelectText = "cake";
+                    strSelectText = enBossName.주연.ToString();
                     break;
 
                 case "pbox2":
-                    strSelectText = "burger";
+                    strSelectText = enBossName.혜원.ToString();
                     break;
 
                 case "pbox3":
-                    strSelectText = "pizza";
+                    strSelectText = enBossName.경동.ToString();
                     break;
 
                 case "pbox4":
-                    strSelectText = "ice";
+                    strSelectText = enBossName.민정.ToString();
                     break;
             }
 
-            _strList.Add(strSelectText);
-            /*_arList.Add(strSelectText);
-            _arList.Add(1);*/
-            fUIDisplay();
-            fDataGridViewDisplay();
+            int iTotalCount = Enum.GetValues(typeof(enClassName)).Length;
+
+
+            if (iTotalCount > iPlayerCount )
+            {
+                enClassName enName = (enClassName)iPlayerCount;
+                _dic.Add(enName.ToString(), strSelectText);
+                fUIDisplay();
+                fDataGridViewDisplay();
+
+                iPlayerCount++;
+            }
+            else
+            {
+
+            }
+          
         }
 
         private void fDataGridViewDisplay()
@@ -128,25 +145,25 @@ namespace Dictionary
 
         private void fUIDisplay()
         {
-            int iCake = 0;
-            int iBurger = 0;
-            int iPizza = 0;
-            int iIce = 0;
+            int i주연 = 0;
+            int i혜원 = 0;
+            int i경동 = 0;
+            int i민정 = 0;
 
             foreach (string oitem in _strList)
             {
                 switch (oitem)
                 {
-                    case "cake":
+                    case "주연":
                         iCake++;
                         break;
-                    case "burger":
+                    case "혜원":
                         iBurger++;
                         break;
-                    case "pizza":
+                    case "경동":
                         iPizza++;
                         break;
-                    case "ice":
+                    case "민정":
                         iIce++;
                         break;
 
