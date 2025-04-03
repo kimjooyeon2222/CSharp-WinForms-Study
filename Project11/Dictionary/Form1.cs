@@ -48,13 +48,13 @@ namespace Dictionary
 
         }
 
-        List<string> _strList = new List<string>();
+ /*       List<string> _strList = new List<string>();
 
-        ArrayList _arList = new ArrayList();
+        ArrayList _arList = new ArrayList();*/
 
         int _iPlayerCount = 0;
 
-        Hashtable _ht = new Hashtable();
+      //  Hashtable _ht = new Hashtable();
         Dictionary<string, string> _dic = new Dictionary<string, string>();
 
 
@@ -62,7 +62,8 @@ namespace Dictionary
         public Form1()
         {
             InitializeComponent();
-            //dgViewList.Columns.Add("dgValue", "Value"); // add Column
+           /* dgViewList.Columns.Add("dgKey", "Key"); // add Column
+            dgViewList.Columns.Add("dgValue", "Value"); // add Column*/
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -125,13 +126,20 @@ namespace Dictionary
 
         private void fDataGridViewDisplay()
         {
-            dgViewList.Rows.Clear();
+            /*  dgViewList.Rows.Clear();
 
 
-            foreach (string oitem in _strList)
-            {
-                dgViewList.Rows.Add(oitem);
-            }
+              foreach (KeyValuePair<string,string> oitem in _dic)
+              {
+                  dgViewList.Rows.Add(oitem.Key,oitem.Value);
+              }*/
+
+            dgViewList.DataSource = _dic.ToArray();
+
+
+
+
+
 
 
             foreach (DataGridViewRow oRow in dgViewList.Rows)
@@ -139,6 +147,9 @@ namespace Dictionary
                 oRow.HeaderCell.Value = oRow.Index.ToString();
 
             }
+
+
+
 
             dgViewList.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
@@ -150,7 +161,7 @@ namespace Dictionary
             int i경동 = 0;
             int i민정 = 0;
 
-            foreach (string oitem in _strList)
+            foreach (string oitem in _dic.Values)
             {
                 switch (oitem)
                 {
