@@ -13,38 +13,38 @@ namespace Dictionary
 {
     public partial class Form1 : Form
     {
-        
+
         enum enBossName
         {
-           주연,
-           혜원,
-           경동,
-           민정,
-    
+            주연,
+            혜원,
+            경동,
+            민정,
+
         }
 
         enum enClassName
         {
-          진,
-          정국,
-          RM,
-          지민,
-          제이홉,
-          뷔,
-          슈가,
+            진,
+            정국,
+            RM,
+            지민,
+            제이홉,
+            뷔,
+            슈가,
 
-          은비,
-          사쿠라,
-          해원,
-          예나,
-          채연,
-          채원,
-          민주,
-          히토미,
-          유리,
-          유진,
-          원영,
-          나코,
+            은비,
+            사쿠라,
+            해원,
+            예나,
+            채연,
+            채원,
+            민주,
+            히토미,
+            유리,
+            유진,
+            원영,
+            나코,
 
         }
 
@@ -52,11 +52,11 @@ namespace Dictionary
 
         ArrayList _arList = new ArrayList();
 
-        int iPlayerCount = 0;
+        int _iPlayerCount = 0;
 
         Hashtable _ht = new Hashtable();
         Dictionary<string, string> _dic = new Dictionary<string, string>();
-        
+
 
 
         public Form1()
@@ -107,20 +107,20 @@ namespace Dictionary
             int iTotalCount = Enum.GetValues(typeof(enClassName)).Length;
 
 
-            if (iTotalCount > iPlayerCount )
+            if (iTotalCount > _iPlayerCount)
             {
-                enClassName enName = (enClassName)iPlayerCount;
+                enClassName enName = (enClassName)_iPlayerCount;
                 _dic.Add(enName.ToString(), strSelectText);
-                fUIDisplay();
+                fUIDisplay(iTotalCount, enName.ToString());
                 fDataGridViewDisplay();
 
-                iPlayerCount++;
+                _iPlayerCount++;
             }
             else
             {
-
+                lblPlayerName.Text = "투표를 완료했습니다.";
             }
-          
+
         }
 
         private void fDataGridViewDisplay()
@@ -143,7 +143,7 @@ namespace Dictionary
             dgViewList.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
         }
 
-        private void fUIDisplay()
+        private void fUIDisplay(int iTotalCount, string strPlayerName)
         {
             int i주연 = 0;
             int i혜원 = 0;
@@ -175,9 +175,12 @@ namespace Dictionary
             lblPick3.Text = i경동.ToString();
             lblPick4.Text = i민정.ToString();
 
-            lblTotalCount.Text = _strList.Count.ToString();
+
+
+            lblTotalCount.Text = string.Format("{0} / {1}", _iPlayerCount+ 1, iTotalCount);
+            lblPlayerName.Text = strPlayerName;
 
 
         }
-    }
+    } 
 }

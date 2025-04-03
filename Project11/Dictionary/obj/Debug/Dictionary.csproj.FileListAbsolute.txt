@@ -5,3 +5,6 @@ C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\Dictiona
 C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\Dictionary.csproj.CoreCompileInputs.cache
 C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\List.exe
 C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\obj\Debug\List.pdb
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\bin\Debug\List.exe.config
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\bin\Debug\List.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project11\Dictionary\bin\Debug\List.pdb
