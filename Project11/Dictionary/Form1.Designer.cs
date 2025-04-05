@@ -281,6 +281,7 @@
             // 
             // dgViewList
             // 
+            this.dgViewList.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
             this.dgViewList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgViewList.Location = new System.Drawing.Point(137, 471);
             this.dgViewList.Name = "dgViewList";
