@@ -1,0 +1,10 @@
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\bin\Debug\DataTable_study.exe.config
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\bin\Debug\DataTable_study.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\bin\Debug\DataTable_study.pdb
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\obj\Debug\DataTable_study.csproj.AssemblyReference.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\obj\Debug\DataTable_study.Form1.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\obj\Debug\DataTable_study.Properties.Resources.resources
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\obj\Debug\DataTable_study.csproj.GenerateResource.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\obj\Debug\DataTable_study.csproj.CoreCompileInputs.cache
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\obj\Debug\DataTable_study.exe
+C:\Users\zpffj\source\repos\CSharp_Study\Project12\DataTable_study\obj\Debug\DataTable_study.pdb
