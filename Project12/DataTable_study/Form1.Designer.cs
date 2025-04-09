@@ -40,9 +40,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgViewInfo = new System.Windows.Forms.DataGridView();
             this.btnViewDataDel = new System.Windows.Forms.Button();
             this.cboxViewClass = new System.Windows.Forms.ComboBox();
-            this.dgViewInfo = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgViewInfo)).BeginInit();
@@ -69,6 +69,7 @@
             // 
             // btnReg
             // 
+            this.btnReg.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnReg.Location = new System.Drawing.Point(382, 239);
             this.btnReg.Name = "btnReg";
             this.btnReg.Size = new System.Drawing.Size(126, 42);
@@ -86,9 +87,10 @@
             // rdoRegSexFemale
             // 
             this.rdoRegSexFemale.AutoSize = true;
+            this.rdoRegSexFemale.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoRegSexFemale.Location = new System.Drawing.Point(258, 139);
             this.rdoRegSexFemale.Name = "rdoRegSexFemale";
-            this.rdoRegSexFemale.Size = new System.Drawing.Size(89, 28);
+            this.rdoRegSexFemale.Size = new System.Drawing.Size(91, 28);
             this.rdoRegSexFemale.TabIndex = 7;
             this.rdoRegSexFemale.TabStop = true;
             this.rdoRegSexFemale.Text = "여자";
@@ -97,9 +99,10 @@
             // rdoRegSexMale
             // 
             this.rdoRegSexMale.AutoSize = true;
+            this.rdoRegSexMale.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoRegSexMale.Location = new System.Drawing.Point(141, 139);
             this.rdoRegSexMale.Name = "rdoRegSexMale";
-            this.rdoRegSexMale.Size = new System.Drawing.Size(89, 28);
+            this.rdoRegSexMale.Size = new System.Drawing.Size(91, 28);
             this.rdoRegSexMale.TabIndex = 6;
             this.rdoRegSexMale.TabStop = true;
             this.rdoRegSexMale.Text = "남자";
@@ -128,36 +131,40 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.Location = new System.Drawing.Point(53, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 24);
+            this.label4.Size = new System.Drawing.Size(85, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "성별：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.Location = new System.Drawing.Point(53, 182);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 24);
+            this.label3.Size = new System.Drawing.Size(85, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "특기：";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.Location = new System.Drawing.Point(53, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 24);
+            this.label2.Size = new System.Drawing.Size(85, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "이름：";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(77, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 24);
+            this.label1.Size = new System.Drawing.Size(60, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "반：";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -167,6 +174,7 @@
             this.groupBox2.Controls.Add(this.dgViewInfo);
             this.groupBox2.Controls.Add(this.btnViewDataDel);
             this.groupBox2.Controls.Add(this.cboxViewClass);
+            this.groupBox2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.Location = new System.Drawing.Point(34, 417);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(972, 518);
@@ -174,9 +182,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "내용확인";
             // 
+            // dgViewInfo
+            // 
+            this.dgViewInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgViewInfo.Location = new System.Drawing.Point(6, 110);
+            this.dgViewInfo.Name = "dgViewInfo";
+            this.dgViewInfo.RowHeadersWidth = 82;
+            this.dgViewInfo.RowTemplate.Height = 37;
+            this.dgViewInfo.Size = new System.Drawing.Size(960, 354);
+            this.dgViewInfo.TabIndex = 10;
+            // 
             // btnViewDataDel
             // 
             this.btnViewDataDel.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnViewDataDel.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnViewDataDel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnViewDataDel.Location = new System.Drawing.Point(823, 46);
             this.btnViewDataDel.Name = "btnViewDataDel";
@@ -196,16 +215,6 @@
             this.cboxViewClass.Name = "cboxViewClass";
             this.cboxViewClass.Size = new System.Drawing.Size(157, 32);
             this.cboxViewClass.TabIndex = 4;
-            // 
-            // dgViewInfo
-            // 
-            this.dgViewInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgViewInfo.Location = new System.Drawing.Point(6, 110);
-            this.dgViewInfo.Name = "dgViewInfo";
-            this.dgViewInfo.RowHeadersWidth = 82;
-            this.dgViewInfo.RowTemplate.Height = 37;
-            this.dgViewInfo.Size = new System.Drawing.Size(960, 354);
-            this.dgViewInfo.TabIndex = 10;
             // 
             // Form1
             // 
