@@ -184,6 +184,7 @@
             // 
             // dgViewInfo
             // 
+            this.dgViewInfo.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dgViewInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgViewInfo.Location = new System.Drawing.Point(6, 110);
             this.dgViewInfo.Name = "dgViewInfo";
