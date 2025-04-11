@@ -108,6 +108,11 @@ namespace DataTable_study
 
         private void btnViewDataDel_Click(object sender, EventArgs e)
         {
+            int iSelectRow = dgViewInfo.SelectedRows[0].Index;
+            ds.Tables[cboxViewClass.Text].Rows.RemoveAt(iSelectRow);
+
+            //갱신
+            cboxViewClass_SelectedIndexChanged(this, null);
 
         }
 
