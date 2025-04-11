@@ -129,6 +129,7 @@
             this.cboxRegClass.Size = new System.Drawing.Size(143, 32);
             this.cboxRegClass.TabIndex = 4;
             this.cboxRegClass.Text = "1반";
+            this.cboxRegClass.SelectedIndexChanged += new System.EventHandler(this.cboxRegClass_SelectedIndexChanged);
             // 
             // label4
             // 

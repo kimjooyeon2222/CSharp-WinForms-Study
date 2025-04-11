@@ -12,7 +12,9 @@ namespace DataTable_study
 {
     public partial class Form1 : Form
     {
+        DataSet ds = new DataSet(); // 학급들에 대한 정보를 가지고 있을 때 DataSet
         
+
         
         public Form1()
         {
@@ -21,6 +23,41 @@ namespace DataTable_study
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            DataTable dt = null;
+            dt = new DataTable(cboxRegClass.Text);
+
+            DataColumn colName = new DataColumn("NAME", typeof(string));
+            DataColumn colSex = new DataColumn("SEX", typeof(string));
+            DataColumn colRef = new DataColumn("REF", typeof(string));
+
+            dt.Columns.Add(colName);
+            dt.Columns.Add(colSex);
+            dt.Columns.Add(colRef);
+
+
+            //Row 자료를 등록
+            DataRow row = dt.NewRow();
+            row["NAME"] = tboxRegName.Text;
+            if (rdoRegSexMale.Checked)
+            {
+                row["SEX"] = "남자";
+            }
+            else if (rdoRegSexFemale.Checked)
+            {
+                row["SEX"] = "여자";
+            }
+
+            row["SEX"] = tboxRegName.Text;
+            row["NAME"] = tboxRegName.Text;
+
+            row["REF"] = tboxRegRef.Text;
+
+            // 생성한 Row를 Table에 등록
+
+            dt.Rows.Add(row);
+
+            ds.Tables.Add(dt);
+
 
         }
 
@@ -35,6 +72,11 @@ namespace DataTable_study
         }
 
         private void cboxViewClass_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboxRegClass_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
