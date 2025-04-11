@@ -76,6 +76,7 @@
             this.btnReg.TabIndex = 9;
             this.btnReg.Text = "등록";
             this.btnReg.UseVisualStyleBackColor = true;
+            this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
             // 
             // tboxRegRef
             // 
@@ -127,6 +128,7 @@
             this.cboxRegClass.Name = "cboxRegClass";
             this.cboxRegClass.Size = new System.Drawing.Size(143, 32);
             this.cboxRegClass.TabIndex = 4;
+            this.cboxRegClass.Text = "1반";
             // 
             // label4
             // 
@@ -204,6 +206,7 @@
             this.btnViewDataDel.TabIndex = 9;
             this.btnViewDataDel.Text = "삭제";
             this.btnViewDataDel.UseVisualStyleBackColor = false;
+            this.btnViewDataDel.Click += new System.EventHandler(this.btnViewDataDel_Click);
             // 
             // cboxViewClass
             // 
@@ -216,6 +219,7 @@
             this.cboxViewClass.Name = "cboxViewClass";
             this.cboxViewClass.Size = new System.Drawing.Size(157, 32);
             this.cboxViewClass.TabIndex = 4;
+            this.cboxViewClass.SelectedIndexChanged += new System.EventHandler(this.cboxViewClass_SelectedIndexChanged);
             // 
             // Form1
             // 
