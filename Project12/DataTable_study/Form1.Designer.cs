@@ -43,6 +43,7 @@
             this.dgViewInfo = new System.Windows.Forms.DataGridView();
             this.btnViewDataDel = new System.Windows.Forms.Button();
             this.cboxViewClass = new System.Windows.Forms.ComboBox();
+            this.btnModify = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgViewInfo)).BeginInit();
@@ -50,6 +51,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnModify);
             this.groupBox1.Controls.Add(this.btnReg);
             this.groupBox1.Controls.Add(this.tboxRegRef);
             this.groupBox1.Controls.Add(this.rdoRegSexFemale);
@@ -70,9 +72,9 @@
             // btnReg
             // 
             this.btnReg.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnReg.Location = new System.Drawing.Point(382, 239);
+            this.btnReg.Location = new System.Drawing.Point(304, 251);
             this.btnReg.Name = "btnReg";
-            this.btnReg.Size = new System.Drawing.Size(126, 42);
+            this.btnReg.Size = new System.Drawing.Size(93, 42);
             this.btnReg.TabIndex = 9;
             this.btnReg.Text = "등록";
             this.btnReg.UseVisualStyleBackColor = true;
@@ -222,6 +224,17 @@
             this.cboxViewClass.TabIndex = 4;
             this.cboxViewClass.SelectedIndexChanged += new System.EventHandler(this.cboxViewClass_SelectedIndexChanged);
             // 
+            // btnModify
+            // 
+            this.btnModify.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnModify.Location = new System.Drawing.Point(415, 251);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(93, 42);
+            this.btnModify.TabIndex = 10;
+            this.btnModify.Text = "수정";
+            this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
@@ -256,6 +269,7 @@
         private System.Windows.Forms.Button btnViewDataDel;
         private System.Windows.Forms.ComboBox cboxViewClass;
         private System.Windows.Forms.DataGridView dgViewInfo;
+        private System.Windows.Forms.Button btnModify;
     }
 }
 
