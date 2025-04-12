@@ -233,7 +233,7 @@
             this.btnModify.TabIndex = 10;
             this.btnModify.Text = "수정";
             this.btnModify.UseVisualStyleBackColor = true;
-            this.btnModify.Click += new System.EventHandler(this.button1_Click);
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // Form1
             // 

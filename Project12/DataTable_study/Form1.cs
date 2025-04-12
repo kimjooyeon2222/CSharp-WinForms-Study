@@ -74,8 +74,6 @@ namespace DataTable_study
                 row["SEX"] = "여자";
             }
 
-            row["SEX"] = tboxRegName.Text;
-
             row["NAME"] = tboxRegName.Text;
 
             row["REF"] = tboxRegRef.Text;
@@ -136,9 +134,30 @@ namespace DataTable_study
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnModify_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(tboxRegName.Text))
+            {
+                foreach(DataRow oitem in ds.Tables[cboxRegClass.Text].Rows)
+                {
+                    if (oitem["NAME"].Equals(tboxRegName.Text)){
+                        if (rdoRegSexMale.Checked)
+                        {
+                            oitem["SEX"] = "남자";
+                        }
+                        else if (rdoRegSexFemale.Checked)
+                        {
+                            oitem["SEX"] = "여자";
+                        }
 
+                        oitem["NAME"] = tboxRegName.Text;
+
+                        oitem["REF"] = tboxRegRef.Text;
+                    }
+                }
+                cboxViewClass_SelectedIndexChanged(this, null);
+
+            }
         }
     }
 }
