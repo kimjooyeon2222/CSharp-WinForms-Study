@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnModify = new System.Windows.Forms.Button();
             this.btnReg = new System.Windows.Forms.Button();
             this.tboxRegRef = new System.Windows.Forms.TextBox();
             this.rdoRegSexFemale = new System.Windows.Forms.RadioButton();
@@ -43,7 +44,6 @@
             this.dgViewInfo = new System.Windows.Forms.DataGridView();
             this.btnViewDataDel = new System.Windows.Forms.Button();
             this.cboxViewClass = new System.Windows.Forms.ComboBox();
-            this.btnModify = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgViewInfo)).BeginInit();
@@ -62,12 +62,24 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(34, 58);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(542, 339);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "등록하기";
+            // 
+            // btnModify
+            // 
+            this.btnModify.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnModify.Location = new System.Drawing.Point(415, 251);
+            this.btnModify.Name = "btnModify";
+            this.btnModify.Size = new System.Drawing.Size(93, 42);
+            this.btnModify.TabIndex = 10;
+            this.btnModify.Text = "수정";
+            this.btnModify.UseVisualStyleBackColor = true;
+            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // btnReg
             // 
@@ -223,17 +235,6 @@
             this.cboxViewClass.Size = new System.Drawing.Size(157, 32);
             this.cboxViewClass.TabIndex = 4;
             this.cboxViewClass.SelectedIndexChanged += new System.EventHandler(this.cboxViewClass_SelectedIndexChanged);
-            // 
-            // btnModify
-            // 
-            this.btnModify.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnModify.Location = new System.Drawing.Point(415, 251);
-            this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(93, 42);
-            this.btnModify.TabIndex = 10;
-            this.btnModify.Text = "수정";
-            this.btnModify.UseVisualStyleBackColor = true;
-            this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
             // 
             // Form1
             // 
