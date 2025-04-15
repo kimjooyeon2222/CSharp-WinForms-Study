@@ -51,6 +51,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.groupBox1.Controls.Add(this.btnModify);
             this.groupBox1.Controls.Add(this.btnReg);
             this.groupBox1.Controls.Add(this.tboxRegRef);
@@ -201,7 +202,7 @@
             // 
             // dgViewInfo
             // 
-            this.dgViewInfo.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.dgViewInfo.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dgViewInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgViewInfo.Location = new System.Drawing.Point(6, 110);
             this.dgViewInfo.Name = "dgViewInfo";
