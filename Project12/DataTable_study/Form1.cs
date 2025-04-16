@@ -30,14 +30,22 @@ namespace DataTable_study
 
         private void btnReg_Click(object sender, EventArgs e)
         {
+            // 입력값 유효성 검사
+            if (string.IsNullOrWhiteSpace(tboxRegName.Text) ||
+                string.IsNullOrWhiteSpace(tboxRegRef.Text) ||
+                (!rdoRegSexMale.Checked && !rdoRegSexFemale.Checked) ||
+                string.IsNullOrWhiteSpace(cboxRegClass.Text))
+            {
+                MessageBox.Show("모든 정보를 입력해 주세요.", "입력 오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             bool bCheckisTable = false;
 
             if (ds.Tables.Contains(cboxRegClass.Text))
             {
                 bCheckisTable = true;
             }
-
-
 
             DataTable dt = null;
 
@@ -58,9 +66,7 @@ namespace DataTable_study
                 dt = ds.Tables[cboxRegClass.Text];
             }
 
-
-
-            //Row 자료를 등록
+            // Row 자료를 등록
             DataRow row = dt.NewRow();
 
             row["NAME"] = tboxRegName.Text;
@@ -74,21 +80,9 @@ namespace DataTable_study
                 row["SEX"] = "여자";
             }
 
-            row["NAME"] = tboxRegName.Text;
-
             row["REF"] = tboxRegRef.Text;
 
-
             // 생성한 Row를 Table에 등록
-
-            /* dt.Rows.Add(row);
-             if (bCheckisTable)
-             {
-                 ds.Tables.Remove(cboxRegClass.Text);
-                 ds.Tables.Add(dt);
-             }
-             ds.Tables.Add(dt);*/
-
             if (bCheckisTable)
             {
                 ds.Tables[cboxRegClass.Text].Rows.Add(row);
@@ -97,12 +91,11 @@ namespace DataTable_study
             {
                 dt.Rows.Add(row);
                 ds.Tables.Add(dt);
-
             }
 
             cboxViewClass_SelectedIndexChanged(this, null);
-
         }
+
 
         private void btnViewDataDel_Click(object sender, EventArgs e)
         {
