@@ -13,107 +13,65 @@ namespace Queue_Stack
 {
     public partial class Form1 : Form
     {
-
         Queue<int> _Queue = new Queue<int>(6);
         Stack<int> _Stack = new Stack<int>(6);
+        Random _rd = new Random();
+        Timer _oTimer = new Timer();
+        bool _bTimer = false; // Timer 스위치
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void Form1_Load(object sender, EventArgs e) { }
+        private void label19_Click(object sender, EventArgs e) { }
+        private void label18_Click(object sender, EventArgs e) { }
+        private void label16_Click(object sender, EventArgs e) { }
+        private void label14_Click(object sender, EventArgs e) { }
+        private void label6_Click(object sender, EventArgs e) { }
+        private void label4_Click(object sender, EventArgs e) { }
+        private void label2_Click(object sender, EventArgs e) { }
 
         private void btnDataIn_Click(object sender, EventArgs e)
         {
-            Random rd = new Random();
-            int iData = rd.Next(1, 101);
+            int iData = _rd.Next(1, 101);
 
-            //Queue에 Data를 입력
+            // Queue에 Data를 입력
             if (_Queue.Count < 6)
             {
                 _Queue.Enqueue(iData);
                 fQueueDataDisplay();
-
             }
 
-            //Stack에 Data를 입력
+            // Stack에 Data를 입력
             if (_Stack.Count < 6)
             {
                 _Stack.Push(iData);
                 fStackDataDisplay();
-
             }
         }
-
 
         private void fQueueDataDisplay()
         {
             int[] iArray = _Queue.ToArray();
-            Array.Resize(ref iArray, 6);
+            Label[] labels = { lblQueue1, lblQueue2, lblQueue3, lblQueue4, lblQueue5, lblQueue6 };
 
-            lblQueue1.Text = (iArray[0] == 0 ? "" : iArray[0].ToString());
-            lblQueue2.Text = (iArray[1] == 0 ? "" : iArray[1].ToString());
-            lblQueue3.Text = (iArray[2] == 0 ? "" : iArray[2].ToString());
-            lblQueue4.Text = (iArray[3] == 0 ? "" : iArray[3].ToString());
-            lblQueue5.Text = (iArray[4] == 0 ? "" : iArray[4].ToString());
-            lblQueue6.Text = (iArray[5] == 0 ? "" : iArray[5].ToString());
-
-
+            for (int i = 0; i < labels.Length; i++)
+            {
+                labels[i].Text = (i < iArray.Length && iArray[i] != 0) ? iArray[i].ToString() : "";
+            }
         }
 
         private void fStackDataDisplay()
         {
             int[] iArray = _Stack.ToArray();
-            Array.Resize(ref iArray, 6);
+            Label[] labels = { lblStack1, lblStack2, lblStack3, lblStack4, lblStack5, lblStack6 };
 
-            lblStack1.Text = (iArray[0] == 0 ? "" : iArray[0].ToString());
-            lblStack2.Text = (iArray[1] == 0 ? "" : iArray[1].ToString());
-            lblStack3.Text = (iArray[2] == 0 ? "" : iArray[2].ToString());
-            lblStack4.Text = (iArray[3] == 0 ? "" : iArray[3].ToString());
-            lblStack5.Text = (iArray[4] == 0 ? "" : iArray[4].ToString());
-            lblStack6.Text = (iArray[5] == 0 ? "" : iArray[5].ToString());
-
-
-
+            for (int i = 0; i < labels.Length; i++)
+            {
+                labels[i].Text = (i < iArray.Length && iArray[i] != 0) ? iArray[i].ToString() : "";
+            }
         }
 
         private void btnDataOut_Click(object sender, EventArgs e)
@@ -123,26 +81,15 @@ namespace Queue_Stack
 
         private void fDataOut()
         {
-            //Queue에 Data를 입력
             if (_Queue.Count > 0)
-            {
                 _Queue.Dequeue();
-                fQueueDataDisplay();
 
-            }
-
-            //Stack에 Data를 입력
             if (_Stack.Count > 0)
-            {
                 _Stack.Pop();
-                fStackDataDisplay();
 
-            }
+            fQueueDataDisplay();
+            fStackDataDisplay();
         }
-
-
-        Timer _oTimer = new Timer();
-        bool _bTimer = false; //Timer 스위치
 
         private void btnDataAutoOut_Click(object sender, EventArgs e)
         {
@@ -154,11 +101,10 @@ namespace Queue_Stack
             else
             {
                 _oTimer.Interval = 2000;
+                _oTimer.Tick -= _oTimer_Tick; // 중복 방지용 제거
                 _oTimer.Tick += _oTimer_Tick;
                 _oTimer.Start();
-
                 _bTimer = true;
-
             }
         }
 
@@ -167,9 +113,6 @@ namespace Queue_Stack
             fDataOut();
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e) { }
     }
 }
