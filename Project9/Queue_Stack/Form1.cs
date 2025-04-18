@@ -22,6 +22,8 @@ namespace Queue_Stack
         public Form1()
         {
             InitializeComponent();
+            _oTimer.Interval = 2000;
+            _oTimer.Tick += _oTimer_Tick; // Timer 이벤트는 생성자에서 한 번만 연결
         }
 
         private void Form1_Load(object sender, EventArgs e) { }
@@ -100,9 +102,6 @@ namespace Queue_Stack
             }
             else
             {
-                _oTimer.Interval = 2000;
-                _oTimer.Tick -= _oTimer_Tick; // 중복 방지용 제거
-                _oTimer.Tick += _oTimer_Tick;
                 _oTimer.Start();
                 _bTimer = true;
             }
