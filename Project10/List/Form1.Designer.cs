@@ -53,9 +53,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(22, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(370, 24);
+            this.label1.Size = new System.Drawing.Size(387, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "※ 선호하는 항목을 선택해주세요";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,13 +82,14 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(762, 185);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // lblPick4
             // 
             this.lblPick4.AutoSize = true;
-            this.lblPick4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblPick4.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.lblPick4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPick4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPick4.Location = new System.Drawing.Point(573, 160);
@@ -100,7 +102,7 @@
             // lblPick3
             // 
             this.lblPick3.AutoSize = true;
-            this.lblPick3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblPick3.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.lblPick3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPick3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPick3.Location = new System.Drawing.Point(383, 160);
@@ -113,7 +115,7 @@
             // lblPick2
             // 
             this.lblPick2.AutoSize = true;
-            this.lblPick2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblPick2.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.lblPick2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPick2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPick2.Location = new System.Drawing.Point(193, 160);
@@ -174,7 +176,7 @@
             // lblPick1
             // 
             this.lblPick1.AutoSize = true;
-            this.lblPick1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblPick1.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.lblPick1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblPick1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPick1.Location = new System.Drawing.Point(3, 160);
@@ -197,9 +199,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.Location = new System.Drawing.Point(22, 285);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 24);
+            this.label3.Size = new System.Drawing.Size(151, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Total Count:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,21 +211,23 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.Location = new System.Drawing.Point(22, 321);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(397, 24);
+            this.label2.Size = new System.Drawing.Size(421, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "※ List의 Data를 화면에 보여줍니다.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgViewList
             // 
+            this.dgViewList.BackgroundColor = System.Drawing.Color.DarkOliveGreen;
             this.dgViewList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgViewList.Location = new System.Drawing.Point(202, 388);
+            this.dgViewList.Location = new System.Drawing.Point(33, 388);
             this.dgViewList.Name = "dgViewList";
             this.dgViewList.RowHeadersWidth = 82;
             this.dgViewList.RowTemplate.Height = 37;
-            this.dgViewList.Size = new System.Drawing.Size(458, 370);
+            this.dgViewList.Size = new System.Drawing.Size(752, 370);
             this.dgViewList.TabIndex = 5;
             // 
             // Form1
