@@ -53,7 +53,7 @@ namespace Clicker_Game
 
             Timer oTimer = new Timer();
             oTimer.Enabled = true;
-            oTimer.Interval = 100;
+            oTimer.Interval = 1000;
             oTimer.Tick += OTimer_Tick;
             oTimer.Start();
         }
