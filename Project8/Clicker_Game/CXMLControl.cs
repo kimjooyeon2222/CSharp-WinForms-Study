@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace Clicker_Game
@@ -16,41 +14,34 @@ namespace Clicker_Game
         public static string _LEVEL_5 = "LEVEL_5";
         public static string _LEVEL_50 = "LEVEL_50";
 
-
         public Dictionary<string, string> fXML_Reader(string strXMLPath)
         {
             string strRijndaelText = File.ReadAllText(strXMLPath);
             string strDECText = CRijndael.DecryptString(strRijndaelText, CRijndael._bkey);
 
-
-            Dictionary<string,string> DXMLConfig = new Dictionary<string,string>();
+            Dictionary<string, string> DXMLConfig = new Dictionary<string, string>();
 
             using (XmlReader rd = XmlReader.Create(new StringReader(strDECText)))
             {
-                while (rd.Read())
+                rd.MoveToContent();  // <--- 무조건 Element로 이동
+
+                // SETTING 엘리먼트 안으로 들어감
+                if (rd.IsStartElement("SETTING"))
                 {
-                    if (rd.IsStartElement())
+                    string strID = rd.GetAttribute("ID");
+                    rd.Read(); // SETTING 안쪽으로 들어가기 (자식들 읽을 준비)
+
+                    while (rd.Read())
                     {
-                        if (rd.Name.Equals("SETTING"))
+                        if (rd.NodeType == XmlNodeType.Element)
                         {
-                            string strID = rd["ID"];
-                            rd.Read();
+                            string elementName = rd.Name;
+                            string value = rd.ReadElementContentAsString();
 
-                            string strTICK = rd.ReadElementContentAsString(_TICK,"" );
-                            DXMLConfig.Add(_TICK, strTICK);
-
-                            string strTOTAL = rd.ReadElementContentAsString(_TOTAL, "");
-                            DXMLConfig.Add(_TOTAL, strTOTAL);
-
-                            string strLEVEL_1 = rd.ReadElementContentAsString(_LEVEL_1, "");
-                            DXMLConfig.Add(_LEVEL_1, strLEVEL_1);
-
-                            string strLEVEL_5 = rd.ReadElementContentAsString(_LEVEL_5, "");
-                            DXMLConfig.Add(_LEVEL_5, strLEVEL_5);
-
-                            string strLEVEL_50 = rd.ReadElementContentAsString(_LEVEL_50, "");
-                            DXMLConfig.Add(_LEVEL_50, strLEVEL_50);
-
+                            if (!string.IsNullOrEmpty(elementName))
+                            {
+                                DXMLConfig[elementName] = value;
+                            }
                         }
                     }
                 }
@@ -60,15 +51,15 @@ namespace Clicker_Game
         }
 
 
-
         public void fXML_Writer(string strXMLPath, Dictionary<string, string> DXMLConfig)
         {
             StringBuilder sb = new StringBuilder();
+            XmlWriterSettings settings = new XmlWriterSettings
+            {
+                Indent = true
+            };
 
-            XmlWriterSettings settings = new XmlWriterSettings();
-            settings.Indent = true;
-
-            using (XmlWriter wr = XmlWriter.Create(sb, settings)) // 여기에 StringBuilder 넣음
+            using (XmlWriter wr = XmlWriter.Create(sb, settings))
             {
                 wr.WriteStartDocument();
                 wr.WriteStartElement("SETTING");
@@ -87,6 +78,5 @@ namespace Clicker_Game
             string strRijndaelText = CRijndael.EncryptString(sb.ToString(), CRijndael._bkey);
             File.WriteAllText(strXMLPath, strRijndaelText);
         }
-
     }
 }

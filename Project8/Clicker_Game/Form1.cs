@@ -95,39 +95,59 @@ namespace Clicker_Game
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Button obtn = sender as Button;
+            if (obtn == null) return;
+
+            int cost = 0;
+            int addValue = 0;
+            int level = 0;
 
             switch (obtn.Name)
             {
                 case "btn1Add":
-                    if (iTotal > 100)
-                    {
-                        iTotal -= 100;
-                        i1Level++;
-                        i1Add = 1 * i1Level;
-                    }
+                    cost = 100;
+                    addValue = 1;
+                    level = i1Level + 1;
                     break;
 
                 case "btn5Add":
-                    if (iTotal > 500)
-                    {
-                        iTotal -= 500;
-                        i5Level++;
-                        i5Add = 5 * i5Level;
-                    }
+                    cost = 500;
+                    addValue = 5;
+                    level = i5Level + 1;
                     break;
 
                 case "btn50Add":
-                    if (iTotal > 5000)
-                    {
-                        iTotal -= 5000;
-                        i50Level++;
-                        i50Add = 50 * i50Level;
-                    }
+                    cost = 5000;
+                    addValue = 50;
+                    level = i50Level + 1;
                     break;
 
                 default:
-                    break;
+                    return; // 알 수 없는 버튼이면 그냥 리턴
+            }
+
+            if (iTotal >= cost)
+            {
+                iTotal -= cost;
+
+                switch (obtn.Name)
+                {
+                    case "btn1Add":
+                        i1Level = level;
+                        i1Add = addValue * i1Level;
+                        break;
+
+                    case "btn5Add":
+                        i5Level = level;
+                        i5Add = addValue * i5Level;
+                        break;
+
+                    case "btn50Add":
+                        i50Level = level;
+                        i50Add = addValue * i50Level;
+                        break;
+                }
             }
         }
+
     }
 }
