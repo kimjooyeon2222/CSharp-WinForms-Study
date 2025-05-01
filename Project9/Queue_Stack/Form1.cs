@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace Queue_Stack
 {
@@ -17,13 +16,15 @@ namespace Queue_Stack
         Stack<int> _Stack = new Stack<int>(6);
         Random _rd = new Random();
         Timer _oTimer = new Timer();
-        bool _bTimer = false; // Timer 스위치
+        bool _bTimer = false; // Timer switch
 
         public Form1()
         {
             InitializeComponent();
+
+            // Set timer interval and event handler
             _oTimer.Interval = 2000;
-            _oTimer.Tick += _oTimer_Tick; // Timer 이벤트는 생성자에서 한 번만 연결
+            _oTimer.Tick += _oTimer_Tick;
         }
 
         private void Form1_Load(object sender, EventArgs e) { }
@@ -39,40 +40,26 @@ namespace Queue_Stack
         {
             int iData = _rd.Next(1, 101);
 
-            // Queue에 Data를 입력
+            // Insert data into the queue
             if (_Queue.Count < 6)
             {
                 _Queue.Enqueue(iData);
-                fQueueDataDisplay();
+                fDisplay(new Label[] { lblQueue1, lblQueue2, lblQueue3, lblQueue4, lblQueue5, lblQueue6 }, _Queue.ToArray());
             }
 
-            // Stack에 Data를 입력
+            // Push data into the stack
             if (_Stack.Count < 6)
             {
                 _Stack.Push(iData);
-                fStackDataDisplay();
+                fDisplay(new Label[] { lblStack1, lblStack2, lblStack3, lblStack4, lblStack5, lblStack6 }, _Stack.ToArray());
             }
         }
 
-        private void fQueueDataDisplay()
+        private void fDisplay(Label[] labels, int[] values)
         {
-            int[] iArray = _Queue.ToArray();
-            Label[] labels = { lblQueue1, lblQueue2, lblQueue3, lblQueue4, lblQueue5, lblQueue6 };
-
             for (int i = 0; i < labels.Length; i++)
             {
-                labels[i].Text = (i < iArray.Length && iArray[i] != 0) ? iArray[i].ToString() : "";
-            }
-        }
-
-        private void fStackDataDisplay()
-        {
-            int[] iArray = _Stack.ToArray();
-            Label[] labels = { lblStack1, lblStack2, lblStack3, lblStack4, lblStack5, lblStack6 };
-
-            for (int i = 0; i < labels.Length; i++)
-            {
-                labels[i].Text = (i < iArray.Length && iArray[i] != 0) ? iArray[i].ToString() : "";
+                labels[i].Text = (i < values.Length) ? values[i].ToString() : "";
             }
         }
 
@@ -89,8 +76,8 @@ namespace Queue_Stack
             if (_Stack.Count > 0)
                 _Stack.Pop();
 
-            fQueueDataDisplay();
-            fStackDataDisplay();
+            fDisplay(new Label[] { lblQueue1, lblQueue2, lblQueue3, lblQueue4, lblQueue5, lblQueue6 }, _Queue.ToArray());
+            fDisplay(new Label[] { lblStack1, lblStack2, lblStack3, lblStack4, lblStack5, lblStack6 }, _Stack.ToArray());
         }
 
         private void btnDataAutoOut_Click(object sender, EventArgs e)
