@@ -354,7 +354,7 @@
             // lblStack6
             // 
             this.lblStack6.AutoSize = true;
-            this.lblStack6.BackColor = System.Drawing.Color.LightCoral;
+            this.lblStack6.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblStack6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack6.Location = new System.Drawing.Point(3, 198);
             this.lblStack6.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
@@ -381,7 +381,7 @@
             // lblStack1
             // 
             this.lblStack1.AutoSize = true;
-            this.lblStack1.BackColor = System.Drawing.Color.LightCoral;
+            this.lblStack1.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblStack1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack1.Location = new System.Drawing.Point(3, 0);
             this.lblStack1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
@@ -408,7 +408,7 @@
             // lblStack2
             // 
             this.lblStack2.AutoSize = true;
-            this.lblStack2.BackColor = System.Drawing.Color.LightCoral;
+            this.lblStack2.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblStack2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack2.Location = new System.Drawing.Point(3, 41);
             this.lblStack2.Margin = new System.Windows.Forms.Padding(3);
@@ -435,7 +435,7 @@
             // lblStack3
             // 
             this.lblStack3.AutoSize = true;
-            this.lblStack3.BackColor = System.Drawing.Color.LightCoral;
+            this.lblStack3.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblStack3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack3.Location = new System.Drawing.Point(3, 81);
             this.lblStack3.Margin = new System.Windows.Forms.Padding(3);
@@ -462,7 +462,7 @@
             // lblStack4
             // 
             this.lblStack4.AutoSize = true;
-            this.lblStack4.BackColor = System.Drawing.Color.LightCoral;
+            this.lblStack4.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblStack4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack4.Location = new System.Drawing.Point(3, 120);
             this.lblStack4.Margin = new System.Windows.Forms.Padding(3);
@@ -489,7 +489,7 @@
             // lblStack5
             // 
             this.lblStack5.AutoSize = true;
-            this.lblStack5.BackColor = System.Drawing.Color.LightCoral;
+            this.lblStack5.BackColor = System.Drawing.Color.DarkSalmon;
             this.lblStack5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStack5.Location = new System.Drawing.Point(3, 159);
             this.lblStack5.Margin = new System.Windows.Forms.Padding(3);
