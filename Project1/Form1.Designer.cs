@@ -246,7 +246,7 @@
             // 
             // txtSearch
             // 
-            txtSearch.BackColor = SystemColors.Window;
+            txtSearch.BackColor = SystemColors.InactiveCaption;
             txtSearch.Font = new Font("맑은 고딕", 7F);
             txtSearch.Location = new Point(306, 9);
             txtSearch.Name = "txtSearch";
