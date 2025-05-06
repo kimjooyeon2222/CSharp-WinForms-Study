@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdoDough1 = new System.Windows.Forms.RadioButton();
             this.rdoDough2 = new System.Windows.Forms.RadioButton();
+            this.rdoDough1 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rdoEdge2 = new System.Windows.Forms.RadioButton();
             this.rdoEdge1 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cboxTopping1 = new System.Windows.Forms.CheckBox();
-            this.cboxTopping3 = new System.Windows.Forms.CheckBox();
-            this.cboxTopping2 = new System.Windows.Forms.CheckBox();
-            this.numEa = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.numEa = new System.Windows.Forms.NumericUpDown();
+            this.cboxTopping2 = new System.Windows.Forms.CheckBox();
+            this.cboxTopping3 = new System.Windows.Forms.CheckBox();
+            this.cboxTopping1 = new System.Windows.Forms.CheckBox();
             this.btnOrder = new System.Windows.Forms.Button();
             this.lboxOrder = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
@@ -60,17 +60,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dough";
             // 
-            // rdoDough1
-            // 
-            this.rdoDough1.AutoSize = true;
-            this.rdoDough1.Location = new System.Drawing.Point(12, 31);
-            this.rdoDough1.Name = "rdoDough1";
-            this.rdoDough1.Size = new System.Drawing.Size(186, 28);
-            this.rdoDough1.TabIndex = 0;
-            this.rdoDough1.TabStop = true;
-            this.rdoDough1.Text = "original ($10)";
-            this.rdoDough1.UseVisualStyleBackColor = true;
-            // 
             // rdoDough2
             // 
             this.rdoDough2.AutoSize = true;
@@ -81,6 +70,17 @@
             this.rdoDough2.TabStop = true;
             this.rdoDough2.Text = "Thin ($11)";
             this.rdoDough2.UseVisualStyleBackColor = true;
+            // 
+            // rdoDough1
+            // 
+            this.rdoDough1.AutoSize = true;
+            this.rdoDough1.Location = new System.Drawing.Point(12, 31);
+            this.rdoDough1.Name = "rdoDough1";
+            this.rdoDough1.Size = new System.Drawing.Size(186, 28);
+            this.rdoDough1.TabIndex = 0;
+            this.rdoDough1.TabStop = true;
+            this.rdoDough1.Text = "original ($10)";
+            this.rdoDough1.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -131,25 +131,22 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Toppings";
             // 
-            // cboxTopping1
+            // label1
             // 
-            this.cboxTopping1.AutoSize = true;
-            this.cboxTopping1.Location = new System.Drawing.Point(12, 34);
-            this.cboxTopping1.Name = "cboxTopping1";
-            this.cboxTopping1.Size = new System.Drawing.Size(272, 28);
-            this.cboxTopping1.TabIndex = 0;
-            this.cboxTopping1.Text = "Sausage (1ea $0.5 )";
-            this.cboxTopping1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(407, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "(EA)";
             // 
-            // cboxTopping3
+            // numEa
             // 
-            this.cboxTopping3.AutoSize = true;
-            this.cboxTopping3.Location = new System.Drawing.Point(12, 102);
-            this.cboxTopping3.Name = "cboxTopping3";
-            this.cboxTopping3.Size = new System.Drawing.Size(262, 28);
-            this.cboxTopping3.TabIndex = 1;
-            this.cboxTopping3.Text = "Cheeze (1ea $0.5 )";
-            this.cboxTopping3.UseVisualStyleBackColor = true;
+            this.numEa.Location = new System.Drawing.Point(333, 95);
+            this.numEa.Name = "numEa";
+            this.numEa.Size = new System.Drawing.Size(68, 35);
+            this.numEa.TabIndex = 3;
             // 
             // cboxTopping2
             // 
@@ -161,22 +158,25 @@
             this.cboxTopping2.Text = "Potato (1ea $0.25 )";
             this.cboxTopping2.UseVisualStyleBackColor = true;
             // 
-            // numEa
+            // cboxTopping3
             // 
-            this.numEa.Location = new System.Drawing.Point(333, 95);
-            this.numEa.Name = "numEa";
-            this.numEa.Size = new System.Drawing.Size(68, 35);
-            this.numEa.TabIndex = 3;
+            this.cboxTopping3.AutoSize = true;
+            this.cboxTopping3.Location = new System.Drawing.Point(12, 102);
+            this.cboxTopping3.Name = "cboxTopping3";
+            this.cboxTopping3.Size = new System.Drawing.Size(262, 28);
+            this.cboxTopping3.TabIndex = 1;
+            this.cboxTopping3.Text = "Cheeze (1ea $0.5 )";
+            this.cboxTopping3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // cboxTopping1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(407, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "(EA)";
+            this.cboxTopping1.AutoSize = true;
+            this.cboxTopping1.Location = new System.Drawing.Point(12, 34);
+            this.cboxTopping1.Name = "cboxTopping1";
+            this.cboxTopping1.Size = new System.Drawing.Size(272, 28);
+            this.cboxTopping1.TabIndex = 0;
+            this.cboxTopping1.Text = "Sausage (1ea $0.5 )";
+            this.cboxTopping1.UseVisualStyleBackColor = true;
             // 
             // btnOrder
             // 
@@ -190,6 +190,8 @@
             // 
             // lboxOrder
             // 
+            this.lboxOrder.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.lboxOrder.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lboxOrder.FormattingEnabled = true;
             this.lboxOrder.ItemHeight = 24;
             this.lboxOrder.Location = new System.Drawing.Point(42, 481);
