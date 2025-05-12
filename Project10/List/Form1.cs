@@ -1,73 +1,45 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace List
 {
     public partial class Form1 : Form
     {
-
         List<string> _strList = new List<string>();
-
-        ArrayList _arList = new ArrayList();
-
-
+        ArrayList _arList = new ArrayList(); // 아직 사용 X
 
         public Form1()
         {
             InitializeComponent();
-            dgViewList.Columns.Add("dgValue", "Value"); // add Column
+            if (dgViewList.Columns.Count == 0)
+                dgViewList.Columns.Add("dgValue", "Value"); // 중복 방지
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+        private void label1_Click(object sender, EventArgs e) { }
 
-        }
+        private void label3_Click(object sender, EventArgs e) { }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void Form1_Load(object sender, EventArgs e) { }
 
         private void pbox_Click(object sender, EventArgs e)
         {
             PictureBox pbox = sender as PictureBox;
+            if (pbox == null) return;
+
             string strSelectText = string.Empty;
 
             switch (pbox.Name)
             {
-                case "pbox1":
-                    strSelectText = "cake";
-                    break;
-
-                case "pbox2":
-                    strSelectText = "burger";
-                    break;
-
-                case "pbox3":
-                    strSelectText = "pizza";
-                    break;
-
-                case "pbox4":
-                    strSelectText = "ice";
-                    break;
+                case "pbox1": strSelectText = "cake"; break;
+                case "pbox2": strSelectText = "burger"; break;
+                case "pbox3": strSelectText = "pizza"; break;
+                case "pbox4": strSelectText = "ice"; break;
+                default: return; // 예상 외 PictureBox는 무시
             }
 
             _strList.Add(strSelectText);
-            /*_arList.Add(strSelectText);
-            _arList.Add(1);*/
             fUIDisplay();
             fDataGridViewDisplay();
         }
@@ -76,17 +48,14 @@ namespace List
         {
             dgViewList.Rows.Clear();
 
-
-            foreach (string oitem in _strList)
+            foreach (string item in _strList)
             {
-                dgViewList.Rows.Add(oitem);
+                dgViewList.Rows.Add(item);
             }
 
-
-            foreach (DataGridViewRow oRow in dgViewList.Rows)
+            foreach (DataGridViewRow row in dgViewList.Rows)
             {
-                oRow.HeaderCell.Value = oRow.Index.ToString();
-
+                row.HeaderCell.Value = row.Index.ToString();
             }
 
             dgViewList.AutoResizeRowHeadersWidth(DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
@@ -94,28 +63,16 @@ namespace List
 
         private void fUIDisplay()
         {
-            int iCake = 0;
-            int iBurger = 0;
-            int iPizza = 0;
-            int iIce = 0;
+            int iCake = 0, iBurger = 0, iPizza = 0, iIce = 0;
 
-            foreach (string oitem in _strList)
+            foreach (string item in _strList)
             {
-                switch (oitem)
+                switch (item)
                 {
-                    case "cake":
-                        iCake++;
-                        break;
-                    case "burger":
-                        iBurger++;
-                        break;
-                    case "pizza":
-                        iPizza++;
-                        break;
-                    case "ice":
-                        iIce++;
-                        break;
-
+                    case "cake": iCake++; break;
+                    case "burger": iBurger++; break;
+                    case "pizza": iPizza++; break;
+                    case "ice": iIce++; break;
                 }
             }
 
@@ -123,10 +80,7 @@ namespace List
             lblPick2.Text = iBurger.ToString();
             lblPick3.Text = iPizza.ToString();
             lblPick4.Text = iIce.ToString();
-
             lblTotalCount.Text = _strList.Count.ToString();
-
-
         }
     }
 }
